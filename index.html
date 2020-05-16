@@ -9,27 +9,29 @@
 <body>
 	<header>
 		<nav>
-			<a href="index.html">
+			<a>
 				<img src="https://via.placeholder.com/154x64" width="154" height="64" alt="Логотип магазина мороженого">
 			</a>
 			<ul>
 				<li><a href="catalog.html">Каталог</a></li>
-				<li><a href="">Доставка и оплата</a></li>
-				<li><a href="">О компании</a></li>
+				<li><a href="blank.html">Доставка и оплата</a></li>
+				<li><a href="blank.html">О компании</a></li>
 			</ul>
-			<a type="button" href="">Поиск</a>
-			<a type="button" href="">Вход</a>
-			<a type="button" href="">Корзина</a>
-
 		</nav>
+			<span>
+			<a role="button" href="#">Поиск</a>
+			<a role="button" href="#">Вход</a>
+			<a role="button" href="#">Корзина</a>
+			</span>
+
 	</header>
 	<main>
-		<section>
-			<!--Тут будет основное содержимое страницы  -->
-		</section>
+
+		<h1 class="visually-hidden">Главная страница</h1>
+		<section><h2 class="visually-hidden">Содержимое страницы</h2></section>
 
 		<section>
-			<h3>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства</h3>
+			<h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства</h2>
 			<ul>
 				<li>Все наше мороженое изготавливается на собственном производстве, с использованием современного
 					оборудования и проверенных временем технологий.</li>
@@ -43,41 +45,44 @@
 					мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
 			</ul>
 		</section>
-		<section>
+	
 			<article>
-				<h4>Новое в нашем блоге</h4>
+				<h2>Новое в нашем блоге</h2>
 				<a>10 способов сервировки фруктовых щербетов к столу</a>
 			</article>
-		</section>
 		<section>
+			<h2 class="visually-hidden">Подписка</h2>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
 				Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+				<form>
 			<input type="text" id="email" name="email" placeholder="Электронная почта">
-			<button type="submit">Отправить</button>
+			</form>
+			<button type="button">Отправить</button>
+			
 		</section>
 	</main>
 	<footer>
-		<section>
-			<!-- Иконки это же спрайт ?-->
-			<a href="#">Twitter</a>
-			<a href="#">Instagram</a>
-			<a href="#">FB</a>
-			<a href="#">VK</a>
-		</section>
-		<section>
+		<ul>
+		
+			<li><a href="#">Twitter</a></li>
+			<li>><a href="#">Instagram</a></li>
+			<li><a href="#">FB</a></li>
+		<li>	<a href="#">VK</a></li>
+
+		</ul>
+
 			<ul>
-				<li><a href="#"></a>Для поставщиков</li>
-				<li><a href="#"></a>О производстве</li>
+				<li><a href="blank.html"></a>Для поставщиков</li>
+				<li><a href="blank.html"></a>О производстве</li>
+	
+				<li><a href="blank.html">Наши документы</a></li>
+				<li><a href="blank.html">Экологические стандарты</a></li>
 			</ul>
-			<ul>
-				<li><a href="#">Наши документы</a></li>
-				<li><a href="#">Экологические стандарты</a></li>
-			</ul>
-		</section>
-		<section>
+	
+		<div>
 			<img src="https://via.placeholder.com/108x39" width="108" height="39" alt="Логотип академии">
 			<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
-		</section>
+		</div>
 	</footer>
 </body>
 
