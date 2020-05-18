@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>"Магазин мороженого Глейси"</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,17 +19,92 @@
 				<li><a href="blank.html">О компании</a></li>
 			</ul>
 		</nav>
-			<span>
+			<div>
 			<a role="button" href="#">Поиск</a>
 			<a role="button" href="#">Вход</a>
 			<a role="button" href="#">Корзина</a>
-			</span>
+			</div>
+			<div>
+				<p>с 10 до 20 ежедневно</p>
+				<a href="tel:88124502525">8 812 450-25-25</a>
+			</div>
 
 	</header>
 	<main>
-
 		<h1 class="visually-hidden">Главная страница</h1>
-		<section><h2 class="visually-hidden">Содержимое страницы</h2></section>
+		<section class="slideshow">
+			<div class="slide-inner" role="listbox">
+				<div class="item"><p>Крем-брюле и пломбир с малиновым джемом</p>
+		<a  role="button" href="#">Дайте оба!</a></div>
+		
+			<!--
+				<div class="item"><p></p>
+				<a  role="button" href="#">Дайте оба!</a></div>
+			<div class="item"><p></p>
+				<a  role="button" href="#">Дайте оба!</a></div>
+			-->
+			
+	</div>
+			
+		<div class="slider">
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+		<section>
+			<h2 class="visually-hidden">Содержимое страницы</h2>
+			<h2>Малинка даром!</h2>
+			<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+			<a href="#" type="button">Хочу варенье!</a>
+		</section>
+		<section>
+			<h2 class="visually-hidden"Содержимое страницы></h2>
+			<h2>Шоколадки даром!</h2>
+			<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+			<a href="#" type="button">Хочу шоколадки!</a>
+		</section>
+		<section>
+			<h2 class="visually-hidden">Хиты</h2>
+			<ul>
+				<li>
+					<img src="https://via.placeholder.com/267x267" width="267" height="267"
+						alt="Мороженое с апельсиновым джемом">
+					<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+				
+				<p>310 &#8381;<sub>/кг</sub></p>
+
+			</li>
+			<li>
+			
+					<img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Сливочно-кофейное мороженое">
+					<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+				
+				<p>380 &#8381;<sub>/кг</sub></p>
+
+			</li>
+			<li>
+
+					<img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Клубничное мороженое">
+					<h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+				
+				<p>355 &#8381;<sub>/кг</sub></p>
+
+			</li>
+			<li>
+			
+					<img src="https://via.placeholder.com/267x267" width="267" height="267" alt="Мороженое крем-брюле">
+					<h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+				
+				<p>415 &#8381;<sub>/кг</sub></p>
+
+			</li>
+
+			</ul>
+
+		</section>
 
 		<section>
 			<h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства</h2>
@@ -56,16 +132,31 @@
 				Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
 				<form>
 			<input type="text" id="email" name="email" placeholder="Электронная почта">
-			</form>
-			<button type="button">Отправить</button>
+
+			<button type="submit">Отправить</button>
+				</form>
 			
 		</section>
+		<section>
+			<h2 class="visually-hidden"></h2>
+			<a href="#">Карта</a>
+		</section>
+		<div>
+			<p>Адрес главного офиса и офлайн-магазина:</p>
+			<span>ул/ Большая Конюшенная, 19/8, Санкт-Петербург</span>
+			
+				<p>для заказов по телефону:<br>
+					<a href="tel:88124502525">8 812 450-25-25</a><br>
+				(с 10 до 20 ежедневно)</p>
+				<a  href="#" role="button">Форма обратной связи</a>
+				
+		</div>
 	</main>
 	<footer>
 		<ul>
 		
 			<li><a href="#">Twitter</a></li>
-			<li>><a href="#">Instagram</a></li>
+			<li><a href="#">Instagram</a></li>
 			<li><a href="#">FB</a></li>
 		<li>	<a href="#">VK</a></li>
 
@@ -74,14 +165,13 @@
 			<ul>
 				<li><a href="blank.html"></a>Для поставщиков</li>
 				<li><a href="blank.html"></a>О производстве</li>
-	
 				<li><a href="blank.html">Наши документы</a></li>
 				<li><a href="blank.html">Экологические стандарты</a></li>
 			</ul>
 	
 		<div>
 			<img src="https://via.placeholder.com/108x39" width="108" height="39" alt="Логотип академии">
-			<p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</p>
+			<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 		</div>
 	</footer>
 </body>
