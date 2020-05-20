@@ -20,13 +20,13 @@
 		</nav>
 		<div>
 			<a role="button" href="#">Поиск</a>
-      <a role="button" href="">Вход</a>
-			<a role="button" href="">Корзина</a>
+			<a role="button" href="#">Вход</a>
+			<a role="button" href="#">Корзина</a>
 		</div>
-				<div>
-		<p>с 10 до 20 ежедневно</p>
-		<a href="tel:88124502525">8 812 450-25-25</a>
-	</div>
+		<div>
+			<p>с 10 до 20 ежедневно</p>
+			<a href="tel:88124502525">8 812 450-25-25</a>
+		</div>
 
 	</header>
 
@@ -40,187 +40,184 @@
 		<section>
 			<h2 class="visually-hidden">Фильтр товаров</h2>
 			<h2>Сортировка</h2>
-					<select>
-						<option>по популярности</option>
-					</select>
-				</section>
-				<section>
-					<h2 class="visually-hidden">	Цена:100 &#8381; - 500  &#8381; </h2>
-					<div class="price-filter">
-						<div class="left-slider"></div>
-						<div class="right-slider"></div>
-						<input step="any" type="range" max="500" min="100" value="100" class="slider-filter">
-						<input step="any" type="range" max="500" min="100" value="500" class="slider-filter">
-					</div>
-				</section>
-				<section>
-					<h2>Жирность:</h2>	
-					<form>	
-					<input type="radio" name="fat" id="0">
-					<label for="0">0%</label>
-					<input type="radio" name="fat" checked id="10">
-					<label for="10">до 10%</label>
-					<input type="radio" name="fat" id="under-30">
-					<label for="under-30">до 30%</label>
-					<input type="radio" name="fat" id="more-30">
-					<label for="more-30">выше 30%</label>
-				</form>
-			</section>
-				<section>
-					<h2>Наполнители:</h2>
-					<form>
-						<input type="checkbox" id="chocolate" name="topping" checked value="chocolate">
-						<label for="chocolate">Шоколадные</label>
-						<input type="checkbox" id="sugar" name="topping" checked value="sugar">
-						<label for="sugar">Сахарные присыпки</label>
-						<input type="checkbox" id="fruit" name="topping" value="fruit" >
-						<label for="fruit">Фрукты</label>
-						<input type="checkbox" id="syrop" name="topping" value="syrop" >
-						<label for="syrop">Сиропы</label>
-						<input type="checkbox" id="jam" name="topping" value="jam" >
-						<label for="jam">Джемы</label>
-					</form>
-				</section>
-				<div>
+			<select>
+				<option>по популярности</option>
+			</select>
+		</section>
+		<section>
+			<h2 class="visually-hidden"> Цена:100 &#8381; - 500 &#8381; </h2>
+			<div class="price-filter">
+				<div class="left-slider"></div>
+				<div class="right-slider"></div>
+				<input step="any" type="range" max="500" min="100" value="100" class="slider-filter">
+				<input step="any" type="range" max="500" min="100" value="500" class="slider-filter">
+			</div>
+		</section>
+		<section>
+			<h2>Жирность:</h2>
+			<form>
+				<input type="radio" name="fat" id="less-fat">
+				<label for="less-fat">0%</label>
+				<input type="radio" name="fat" checked id="medium-fat">
+				<label for="medium-fat">до 10%</label>
+				<input type="radio" name="fat" id="normal-fat">
+				<label for="normal-fat">до 30%</label>
+				<input type="radio" name="fat" id="most-fat">
+				<label for="most-fat">выше 30%</label>
+			</form>
+		</section>
+		<section>
+			<h2>Наполнители:</h2>
+			<form>
+				<input type="checkbox" id="chocolate" name="topping" checked value="chocolate">
+				<label for="chocolate">Шоколадные</label>
+				<input type="checkbox" id="sugar" name="topping" checked value="sugar">
+				<label for="sugar">Сахарные присыпки</label>
+				<input type="checkbox" id="fruit" name="topping" value="fruit">
+				<label for="fruit">Фрукты</label>
+				<input type="checkbox" id="syrop" name="topping" value="syrop">
+				<label for="syrop">Сиропы</label>
+				<input type="checkbox" id="jam" name="topping" value="jam">
+				<label for="jam">Джемы</label>
+			</form>
+		</section>
+		<div>
 			<form action="https://echo.htmlacademy.ru/" method="POST" id="form1">
-					<button type="submit"  form="form1" value="accept">Применить</button></form>
-					</div>
+				<button type="submit" form="form1" value="accept">Применить</button></form>
+		</div>
 
 		<section>
 			<ul>
 				<li>
-						<img src="img/item-1.png" width="267" height="267"
-							alt="Мороженое с апельсиновым джемом">
-						<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-					
+					<img src="img/orange-ice.jpg" width="267" height="267" alt="Мороженое с апельсиновым джемом">
+					<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+
 					<p>310 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-12.png" width="267" height="267" alt="Сливочно-кофейное мороженое">
-						<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
-					
+
+					<img src="img/coffee-ice.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое">
+					<h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+
 					<p>380 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-11.png" width="267" height="267" alt="Клубничное мороженое">
-						<h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-					
+
+					<img src="img/strawberry-ice.jpg" width="267" height="267" alt="Клубничное мороженое">
+					<h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+
 					<p>355 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-10.png" width="267" height="267" alt="Мороженое крем-брюле">
-						<h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
-					
+
+					<img src="img/caramel-ice.jpg" width="267" height="267" alt="Мороженое крем-брюле">
+					<h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+
 					<p>415 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-9.png" width="267" height="267" alt="Мороженое с брусничным джемом">
-						<h3><a href="#">Сливочное с брусничным джемом</a></h3>
-					
+
+					<img src="img/lingonberry-ice.jpg" width="267" height="267" alt="Мороженое с брусничным джемом">
+					<h3><a href="#">Сливочное с брусничным джемом</a></h3>
+
 					<p>325 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-8.png" width="267" height="267" alt="Сливочно-черничное мороженое">
-						<h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
-					
+
+					<img src="img/blueberries-ice.jpg" width="267" height="267" alt="Сливочно-черничное мороженое">
+					<h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
+
 					<p>410 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-7.png" width="267" height="267" alt="Сливочно-лимонное мороженое">
-						<h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
-					
+
+					<img src="img/lemon-ice.jpg" width="267" height="267" alt="Сливочно-лимонное мороженое">
+					<h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
+
 					<p>315 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-6.png" width="267" height="267"
-							alt="Мороженое с шоколадной стружкой">
-						<h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
-					
+
+					<img src="img/chocolate-ice.jpg" width="267" height="267" alt="Мороженое с шоколадной стружкой">
+					<h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
+
 					<p>320 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-5.png" width="267" height="267" alt="Сливочно-ванильное мороженое">
-						<h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
-					
+
+					<img src="img/vanilla-ice.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое">
+					<h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
+
 					<p>440 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-4.png" width="267" height="267"
-							alt="Мороженое с ментоловым сиропом">
-						<h3><a href="#">Сливочное с ментоловым сиропом</a></h3>
-					
+
+					<img src="img/mentol-ice.jpg" width="267" height="267" alt="Мороженое с ментоловым сиропом">
+					<h3><a href="#">Сливочное с ментоловым сиропом</a></h3>
+
 					<p>435 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-				
-						<img src="img/item-3.png" width="267" height="267"
-							alt="Мороженое с кусочками шоколада">
-						<h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
-					
+
+					<img src="img/dark-chocolate-ice.jpg" width="267" height="267" alt="Мороженое с кусочками шоколада">
+					<h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
+
 					<p>355 &#8381;<sub>/кг</sub></p>
 
 				</li>
 				<li>
-					
-						<img src="img/item-2.png" width="267" height="267" alt="Мороженое с мятным сиропом">
-						<h3><a href="#">Сливочное с мятным сиропом</a></h3>
-					
+
+					<img src="img/mint-ice.jpg" width="267" height="267" alt="Мороженое с мятным сиропом">
+					<h3><a href="#">Сливочное с мятным сиропом</a></h3>
+
 					<p>420 &#8381;<sub>/кг</sub></p>
 
 				</li>
 			</ul>
-		<div>
-					<a href="#">1</a>
-		
-					<a href="#">2</a>
+			<ul>
+				<li><a href="#">1</a></li>
 
-					<a href="#">3</a>
+				<li><a href="#">2</a></li>
 
-					<a href="#">4</a>
+				<li><a href="#">3</a></li>
 
-					<a href="#">5</a>
-					<a class="next" href="#"></a>
+				<li><a href="#">4</a></li>
 
-		</div>
+				<li><a href="#">5</a></li>
+
+				<li><a class="next" href="#"></a></li>
+
+			</ul>
 		</section>
 	</main>
 	<footer>
 		<ul>
-		
+
 			<li><a href="#">Twitter</a></li>
-			<li>><a href="#">Instagram</a></li>
+			<li><a href="#">Instagram</a></li>
 			<li><a href="#">FB</a></li>
-		<li>	<a href="#">VK</a></li>
+			<li> <a href="#">VK</a></li>
 
 		</ul>
 
-			<ul>
-				<li><a href="#"></a>Для поставщиков</li>
-				<li><a href="#"></a>О производстве</li>
-	
-				<li><a href="#">Наши документы</a></li>
-				<li><a href="#">Экологические стандарты</a></li>
-			</ul>
-	
+		<ul>
+			<li><a href="#"></a>Для поставщиков</li>
+			<li><a href="#"></a>О производстве</li>
+
+			<li><a href="#">Наши документы</a></li>
+			<li><a href="#">Экологические стандарты</a></li>
+		</ul>
+
 		<div>
 			<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
 			<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
