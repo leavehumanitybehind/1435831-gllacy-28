@@ -39,53 +39,73 @@
 		<h1>Сливочное мороженое</h1>
 		<section>
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<h2>Сортировка</h2>
+			<form action="https://echo.htmlacademy.ru" method="get">
+			<fieldset>
+			<legend>Сортировка</legend>
 			<select>
 				<option>по популярности</option>
+				<option>сначала недорогие</option>
+				<option>сначала дорогие</option>
+				<option>по жирности</option>
 			</select>
-		</section>
-		<section>
-			<h2 class="visually-hidden"> Цена:100 &#8381; - 500 &#8381; </h2>
-			<div class="price-filter">
+		</fieldset>
+		<fieldset>
+<legend> Цена:100 &#8381; - 500 &#8381; </legend>
+	<div class="price-filter">
 				<div class="left-slider"></div>
 				<div class="right-slider"></div>
-				<input step="any" type="range" max="500" min="100" value="100" id="min-value" class="slider-filter">
-				<input step="any" type="range" max="500" min="100" value="500" id="max-value" class="slider-filter">
-			</div>
+				<input step="any" type="range" max="500" min="100" id="slider" class="slider-filter">
+	</div>
+		</fieldset>
+		<fieldset>
+			<legend>Жирность:</legend>
+			<ul>
+				<li>
+					<input type="radio" name="fat" id="zero-fat-filter" value="zero-fat">
+					<label for="zero-fat-filter">0%</label>
+				</li>
+				<li>
+					<input type="radio" name="fat" checked id="medium-fat-filter" value="under-ten-percent-fat">
+					<label for="medium-fat-filter">до 10%</label>
+				</li>
+				<li>
+					<input type="radio" name="fat" id="normal-fat-filter" value="under-thirty-petcent-fat">
+					<label for="normal-fat-filter">до 30%</label>
+				</li>
+				<li>
+					<input type="radio" name="fat" id="most-fat-filter" value="more-thirty-percent-fat">
+					<label for="most-fat-filter">выше 30%</label>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Наполнители:</legend>
+			<ul>
+				<li>
+					<input type="checkbox" id="chocolate-topping-filter" name="chocolate-topping" checked>
+					<label for="chocolate-topping-filter">Шоколадные</label>
+				</li>
+				<li>
+					<input type="checkbox" id="sugar-topping-filter" name="sugar-topping" checked>
+					<label for="sugar-topping-filter">Сахарные присыпки</label>
+				</li>
+				<li>
+					<input type="checkbox" id="fruit-topping-filter" name="fruit-topping">
+					<label for="fruit-topping-filter">Фрукты</label>
+				</li>
+				<li>
+					<input type="checkbox" id="syrop-topping-filter" name="syrop-topping">
+					<label for="syrop-topping-filter">Сиропы</label>
+				</li>
+				<li>
+					<input type="checkbox" id="jam-topping-filter" name="jam-topping">
+					<label for="jam-topping-filter">Джемы</label>	
+				</li>
+			</ul>
+		</fieldset>
+		<button type="submit">Применить</button>
+		</form>
 		</section>
-		<section>
-			<h2>Жирность:</h2>
-			<form>
-				<input type="radio" name="fat" id="less-fat">
-				<label for="less-fat">0%</label>
-				<input type="radio" name="fat" checked id="medium-fat">
-				<label for="medium-fat">до 10%</label>
-				<input type="radio" name="fat" id="normal-fat">
-				<label for="normal-fat">до 30%</label>
-				<input type="radio" name="fat" id="most-fat">
-				<label for="most-fat">выше 30%</label>
-			</form>
-		</section>
-		<section>
-			<h2>Наполнители:</h2>
-			<form>
-				<input type="checkbox" id="chocolate" name="topping" checked value="chocolate">
-				<label for="chocolate">Шоколадные</label>
-				<input type="checkbox" id="sugar" name="topping" checked value="sugar">
-				<label for="sugar">Сахарные присыпки</label>
-				<input type="checkbox" id="fruit" name="topping" value="fruit">
-				<label for="fruit">Фрукты</label>
-				<input type="checkbox" id="syrop" name="topping" value="syrop">
-				<label for="syrop">Сиропы</label>
-				<input type="checkbox" id="jam" name="topping" value="jam">
-				<label for="jam">Джемы</label>
-			</form>
-		</section>
-		<div>
-			<form action="https://echo.htmlacademy.ru/" method="POST" id="form1">
-				<button type="submit" form="form1" value="accept">Применить</button></form>
-		</div>
-
 		<section>
 			<ul>
 				<li>
@@ -223,6 +243,30 @@
 			<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 		</div>
 	</footer>
+	<section class="basket-popup">
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<table>
+				<tr>
+					<td><button type="button"></button></td>
+					<td><img src="img/orange-ice.jpg" height="33" width="33"></td>
+					<td><a href="#">Пломбир с апельсиновым джемом</a></td>
+					<td>Кол-во</td>
+					<td>Цена</td>
+					<td>Сумма</td>
+				</tr>
+				<tr>
+					<td><button type="button"></button></td>
+					<td><img src="img/strawberry-ice.jpg" height="33" width="33"></td>
+					<td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+					<td>Кол-во</td>
+					<td>Цена</td>
+					<td>Сумма</td>
+				</tr>
+			</table>
+			<p>Итого</p>
+			<button type="submit">Оформить заказ</button>
+		</form>
+	</section>
 </body>
 
 </html>
