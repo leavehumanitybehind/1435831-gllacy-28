@@ -15,7 +15,7 @@
 			</a>
 			<ul>
 				<li><a href="catalog.html">Каталог</a>
-					<ul class="visually-hidden">
+					<ul>
 						<li><a>Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
 						<li><a href="#">Щербеты</a></li>
@@ -29,15 +29,15 @@
 		</nav>
 			
 			<div>
-				<a class="search-button" href="#">
+				<div class="search-button">
 					Поиск
-				</a>
-						<form class="search-form">
+					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 							<input type="search" id="search-field" placeholder="Что ищем?">
 							<label class="visually-hidden" for="search-field">Поле поиска</label>
-						</form>	
-				
-				<a role="button" href="#">Вход</a>
+						</form>
+				</div>
+
+				<div>Вход
 		<form class="login-field" action="https://echo.htmlacademy.ru" method="post">
 			<p>
 				<input type="email" id="login-form" placeholder="Электронная почта" required>
@@ -45,15 +45,17 @@
 			</p>
 			<p>
 				<input type="password" id="password-form-main" placeholder="Пароль" required>
-				<label class="visually-hidden" id="password-form-main">Пароль</label>
+				<label class="visually-hidden" for="password-form-main">Пароль</label>
 			</p>
 			<button type="submit">Войти</button>
 			<a href="#">Забыли пароль?</a>
 			<a href="#">Новая регистрация</a>
 		</form>
-				<a role="button" href="#">Корзина</a>
-			</div>
-
+	</div>
+	<div>
+	Корзина	
+	</div>>
+		</div>
 			<div>
 				<p>с 10 до 20 ежедневно</p>
 				<a href="tel:88124502525">8 812 450-25-25</a>
@@ -131,14 +133,13 @@
 		</section>
 
 		<section>
+			<h2 class="visually-hidden">Преимущества</h2>
 			<h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства</h2>
 			<ul>
 				<li>Все наше мороженое изготавливается на собственном производстве, с использованием современного
 					оборудования и проверенных временем технологий.</li>
 				<li>Для приготовления мороженого используются настоящие сливки и молоко высочайшео качества.Все
 					дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
-			</ul>
-			<ul>
 				<li>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми
 					нас связывает долговременное сотрудничество.</li>
 				<li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
@@ -192,20 +193,21 @@
 	</footer>
 
 	<section class="subscribe-popup">
+		<h2 class="visually-hidden">Форма подписки</h2>
 		<h2>Мы обязательно вам ответим!</h2>
 		<form action="https://echo.htmlacademy.ru" method="post">
 		<p>
 			<input type="text" id="name-field-main" placeholder="Как вас зовут?" required>
-			<label class="visually-hidden" for id="name-field-main">Имя</label>
+			<label class="visually-hidden" for="name-field-main">Имя</label>
 		</p>
 		<p>
 			<input type="email" id="email-field-main" placeholder="Ваша почта для ответа" required>
-			<label class="visually-hidden" for id="email-field-main">Электронная почта</label>
+			<label class="visually-hidden" for="email-field-main">Электронная почта</label>
 			
 		</p>
 		<p>
 			<textarea name="textarea" id="textarea-field-main" placeholder="Напишите что-нибудь"></textarea>
-			<label class="visually-hidden" for id="textarea-field-main">Поле для текста</label>
+			<label class="visually-hidden" for="textarea-field-main">Поле для текста</label>
 		</p>	
 		<button type="submit">Отправить</button>	
 	</form>

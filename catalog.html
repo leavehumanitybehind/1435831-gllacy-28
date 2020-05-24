@@ -14,7 +14,7 @@
 			</a>
 			<ul>
 				<li><a href="catalog.html">Каталог</a>
-					<ul class="visually-hidden">
+					<ul>
 						<li><a>Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
 						<li><a href="#">Щербеты</a></li>
@@ -25,58 +25,56 @@
 				<li><a href="blank.html">Доставка и оплата</a></li>
 				<li><a href="blank.html">О компании</a></li>
 			</ul>
-		</nav>
-			
+			</nav>
 			<div>
-					<a class="search-button" href="#">
-						Поиск
-					</a>
-							<form class="search-form">
-								<input type="search" id="search-field" placeholder="Что ищем?">
-								<label class="visually-hidden" for="search-field">Поле поиска</label>
-							</form>	
-					
-					<a role="button" href="#">Вход</a>
-			<form class="login-field" action="https://echo.htmlacademy.ru" method="post">
-				<p>
-					<input type="email" id="login-form" placeholder="Электронная почта" required>
-					<label class="visually-hidden" for="login-form">Электронная почта</label>
-				</p>
-				<p>
-					<input type="password" id="password-form-main" placeholder="Пароль" required>	
-					<label class="visually-hidden" id="password-form-main">Пароль</label>
-				</p>
-				<button type="submit">Войти</button>
-				<a href="#">Забыли пароль?</a>
-				<a href="#">Новая регистрация</a>
-			</form>
-					<a role="button" href="#">Корзина</a>
+				<div class="search-button">
+					Поиск
+						<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+							<input type="search" id="search-field" placeholder="Что ищем?">
+							<label class="visually-hidden" for="search-field">Поле поиска</label>
+						</form>
 				</div>
-				<div>
-					<table class="visually-hidden">
-						<tr>
-							<td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
-							<td><img src="img/orange-ice.jpg" height="33" width="33" alt="Пломбир с апельсиновым джемом"></td>
-							<td>Пломбир с апельсиновым джемом</td>
-							<td>1,5 кг х 200 руб.</td>
-							<td>300 руб.</td>
-						</tr>
-						<tr>
-							<td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
-							<td><img src="img/strawberry-ice.jpg" height="33" width="33" alt="Клубничный пломбир с белым шоколадом"></td>
-							<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-							<td>1,5 кг х 300 руб.</td>
-							<td>450 руб.</td>
-						</tr>
-					</table>
-						<p>Итого 750 руб.</p>
-						<a href="#">Оформить заказ</a>
-					</div>
+				<div>Вход
+					<form class="login-field" action="https://echo.htmlacademy.ru" method="post">
+						<p>
+							<input type="email" id="login-form" placeholder="Электронная почта" required>
+							<label class="visually-hidden" for="login-form">Электронная почта</label>
+						</p>
+						<p>
+							<input type="password" id="password-form-main" placeholder="Пароль" required>
+							<label class="visually-hidden" for="password-form-main">Пароль</label>
+						</p>
+						<button type="submit">Войти</button>
+						<a href="#">Забыли пароль?</a>
+						<a href="#">Новая регистрация</a>
+					</form>
+				</div>
+			<div>
+				Корзина
+				<table class="visually-hidden">
+					<tr>
+						<td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
+						<td><img src="img/orange-ice.jpg" height="33" width="33" alt="Пломбир с апельсиновым джемом"></td>
+						<td>Пломбир с апельсиновым джемом</td>
+						<td>1,5 кг х 200 руб.</td>
+						<td>300 руб.</td>
+					</tr>
+					<tr>
+						<td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
+						<td><img src="img/strawberry-ice.jpg" height="33" width="33" alt="Клубничный пломбир с белым шоколадом"></td>
+						<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+						<td>1,5 кг х 300 руб.</td>
+						<td>450 руб.</td>
+					</tr>
+				</table>
+				<p>Итого 750 руб.</p>
+				<a href="#">Оформить заказ</a>
+			</div>
+		</div>
 			<div>
 				<p>с 10 до 20 ежедневно</p>
 				<a href="tel:88124502525">8 812 450-25-25</a>
-			</div>
-
+		</div>
 	</header>
 
 	<main>
@@ -115,7 +113,7 @@
 								<label for="medium-fat-filter">до 10%</label>
 							</li>
 							<li>
-								<input type="radio" name="fat" id="normal-fat-filter" value="under-thirty-petcent-fat">
+								<input type="radio" name="fat" id="normal-fat-filter" value="under-thirty-percent-fat">
 								<label for="normal-fat-filter">до 30%</label>
 							</li>
 							<li>
@@ -153,6 +151,7 @@
 		</form>
 		</section>
 		<section>
+			<h2 class="visually-hidden">Каталог товаров</h2>
 			<ul>
 				<li>
 					<img src="img/orange-ice.jpg" width="267" height="267" alt="Мороженое с апельсиновым джемом">
