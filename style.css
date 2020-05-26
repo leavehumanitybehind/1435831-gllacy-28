@@ -9,6 +9,7 @@
 	--basic-brick: #f26843;
 	--hover-brick: #e74a35;
 	--brick-active: #d07058;
+	--link: #ffbc9e;
 }
 @font-face {
 	font-family: "Roboto";
@@ -56,15 +57,136 @@ a {
 	border-radius: 26px;
 	color: var(--light-black);
 }
-.login {
-	background-image: url("img/entrance.svg");
-	background-repeat: no-repeat;
+.search-button::before {
+	content: url(img/loupe.svg);
+}
+.login::before {
+	content: url("img/entrance.svg");
+}
+.basket::before {
+	content: url("img/basket.svg");
 }
 
+.number {
+	font-size: 22px;
+	line-height: 24px;
+}
+/* features */
+.features {
+	color: var(--light-black);
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	background-image: url("img/pattern.png");
+}
+.features h2 {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+}
+.feature-ice::before {
+	content: url("img/ice-cream.svg");
+}
+.feature-eco::before {
+	content: url("img/eco.svg");
+}
+.feature-cow::before {
+	content: url("img/cow.svg");
+}
+.feature-thermometer::before {
+	content: url("img/thermometer.svg");
+}
 .bread-crunch {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
+}
+.news {
+	background-image: url("img/strawberry-background.jpg");
+}
+.news h2 {
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--light-black);
+}
+.news a {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color: var(--light-black);
+	text-decoration: underline;
+}
+.subscription {
+	font-size: 16px;
+	line-height: 22px;
+	border: 5px solid;
+	border-image: url("img/bg-post.svg") 20 round round;
+	background-color: var(--opacity-white);
+}
+.subscription button,
+.adress button {
+	background-color: var(--basic-brick);
+	color: var(--basic-white);
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 70px;
+}
+.subscription button:hover,
+.adress button:hover {
+	background-color: var(--hover-brick);
+	color: var(--basic-white);
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 70px;
+}
+.subscription button:active,
+.adress button:active {
+	background-color: var(--brick-active);
+	color: var(--basic-white);
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 70px;
+}
+/* footer */
+.twitter-icon::before {
+	content: url(img/twitter.svg);
+}
+.instagram-icon::before {
+	content: url(img/instagram.svg);
+}
+.fb-icon::before {
+	content: url(img/fb.svg);
+}
+.vk-icon::before {
+	content: url(img/vk.svg);
+}
+.page-footer {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+}
+.standarts li:first-child::before {
+	content: url(img/heart.svg);
+}
+.standarts a:hover,
+.standarts a:active {
+	color: var(--link);
+}
+.page a,
+.page a:active {
+	color: var(--light-black);
+	background-color: var(--basic-white);
+	border-radius: 50%;
+	text-align: center;
+	width: 26px;
+	height: 26px;
+}
+.page a:hover {
+	background-color: var(--opacity-white);
+	border-radius: 50%;
 }
 .visually-hidden {
 	display: none;
