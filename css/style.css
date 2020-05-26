@@ -1,0 +1,17 @@
+:root {
+	--basic-white: #ffffff;
+	--background-index-1: #849d8f;
+}
+
+body {
+	font-family: "Roboto";
+	background-color: var(--background-index-1);
+	color: var(--basic-white);
+}
+@font-face {
+	font-family: "Roboto";
+	src: local("fonts");
+}
+.visually-hidden {
+	display: none;
+}
