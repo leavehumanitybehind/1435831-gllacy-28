@@ -8,52 +8,57 @@
   <link href="normalize.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
-
-<body>
-	<header>
-		<nav>
-			<a>
-				<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
-			</a>
-			<ul>
-				<li><a href="catalog.html">Каталог</a>
-					<ul>
-						<li><a>Новинки</a></li>
-						<li><a href="catalog.html">Сливочное</a></li>
-						<li><a href="#">Щербеты</a></li>
-						<li><a href="#">Фруктовый лед</a></li>
-						<li><a href="#">Мелорин</a></li>
-					</ul>
-				</li>
-				<li><a href="blank.html">Доставка и оплата</a></li>
-				<li><a href="blank.html">О компании</a></li>
-			</ul>
-			</nav>
-			<div>
-				<div class="search-button">
-					Поиск
-						<form class="search-form" type="submit" action="https://echo.htmlacademy.ru" method="post">
-							<input type="search" id="search-field" placeholder="Что ищем?">
-							<label class="visually-hidden" for="search-field">Поле поиска</label>
-						</form>
+	<body class="page-body">
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo">
+					<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+				</a>
+				<div class="main-navigation-wrapper">
+					<div class="container">
+						<ul class="site-navigation">
+							<li><a href="catalog.html">Каталог</a>
+								<div class="submenu visually-hidden">
+									<ul>
+										<li><a>Новинки</a></li>
+										<li><a href="catalog.html">Сливочное</a></li>
+										<li><a href="#">Щербеты</a></li>
+										<li><a href="#">Фруктовый лед</a></li>
+										<li><a href="#">Мелорин</a></li>
+									</ul>	
+							</li>
+								</div>
+								<li><a href="blank.html">Доставка и оплата</a></li>
+								<li><a href="blank.html">О компании</a></li>
+						</ul>
+					</div>
 				</div>
-				<div>Вход
-					<form class="login-field"   type="submit" action="https://echo.htmlacademy.ru" method="post">
-						<p>
-							<input type="email" id="login-form" placeholder="Электронная почта" required>
-							<label class="visually-hidden" for="login-form">Электронная почта</label>
-						</p>
-						<p>
-							<input type="password" id="password-form-main" placeholder="Пароль" required>
-							<label class="visually-hidden" for="password-form-main">Пароль</label>
-						</p>
+			</nav>
+			<div class="user-navigation">
+			<div class="search-button">
+			Поиск
+				<form class="search-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+					<input type="search" id="search-field" placeholder="Что ищем?">
+					<label class="visually-hidden" for="search-field">Поле поиска</label>
+				</form>
+			</div>
+			<div>Вход
+				<form class="login-field visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+					<p>
+						<input type="email" id="login-form" placeholder="Электронная почта" required>
+						<label class="visually-hidden" for="login-form">Электронная почта</label>
+					</p>
+					<p>
+						<input type="password" id="password-form-main" placeholder="Пароль" required>
+						<label class="visually-hidden" for="password-form-main">Пароль</label>
+					</p>
 						<button type="submit">Войти</button>
 						<a href="#">Забыли пароль?</a>
 						<a href="#">Новая регистрация</a>
-					</form>
-				</div>
-			<div>
-				Корзина
+				</form>
+			</div>
+			<div class="basket">
+			Корзина
 				<table class="visually-hidden">
 					<tr>
 						<td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
@@ -74,22 +79,22 @@
 				<a href="#">Оформить заказ</a>
 			</div>
 		</div>
-			<div>
+			<div class="contacts">
 				<p>с 10 до 20 ежедневно</p>
 				<a href="tel:88124502525">8 812 450-25-25</a>
 		</div>
 	</header>
 
-	<main>
-		<ul>
+	<main class="container">
+		<ul class="bread-crunch">
 			<li><a href="index.html">Главная</a></li>
 			<li><a href="catalog.html">Каталог</a></li>
 			<li><a>Сливочное</a></li>
 		</ul>
 		<h1>Сливочное мороженое</h1>
-		<section>
+		<section class="filter-list">
 			<h2 class="visually-hidden">Фильтр товаров</h2>
-			<form action="https://echo.htmlacademy.ru" method="get">
+			<form action="https://echo.htmlacademy.ru" type="submit" method="get">
 				<p>
 					<label for="item-sort">Сортировка</label>
 					<select name="sort" id="item-sort">
@@ -153,9 +158,9 @@
 		<button type="submit">Применить</button>
 		</form>
 		</section>
-		<section>
+		<section class="catalog-list">
 			<h2 class="visually-hidden">Каталог товаров</h2>
-			<ul>
+			<ul class="list-item">
 				<li>
 					<img src="img/orange-ice.jpg" width="267" height="267" alt="Мороженое с апельсиновым джемом">
 					<h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
@@ -252,7 +257,7 @@
 
 				</li>
 			</ul>
-			<ul>
+			<ul class="page">
 				<li><a href="#">1</a></li>
 
 				<li><a href="#">2</a></li>
@@ -268,22 +273,22 @@
 			</ul>
 		</section>
 	</main>
-	<footer>
-		<ul>
+	<footer class="page-footer">
+		<ul class="social">
 			<li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
 			<li><a href="#"><span class="visually-hidden">Instagram</span></a></li>
 			<li><a href="#"><span class="visually-hidden">FB</span></a></li>
 			<li><a href="#"><span class="visually-hidden">VK</span></a></li>
 		</ul>
 
-		<ul>
+		<ul class=""standarts>
 			<li><a href="#">Для поставщиков</a></li>
 			<li><a href="#">О производстве</a></li>
 			<li><a href="#">Наши документы</a></li>
 			<li><a href="#">Экологические стандарты</a></li>
 		</ul>
 
-		<div>
+		<div class="copyright">
 			<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
 			<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 		</div>

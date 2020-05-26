@@ -9,14 +9,17 @@
   <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
-	<header>
-		<nav>
-			<a>
+<body class="page-body">
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo">
 				<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
 			</a>
-			<ul>
+			<div class="main-navigation-wrapper">
+				<div class="container">
+			<ul class="site-navigation">
 				<li><a href="catalog.html">Каталог</a>
+					<div class="submenu visually-hidden">
 					<ul>
 						<li><a>Новинки</a></li>
 						<li><a href="catalog.html">Сливочное</a></li>
@@ -25,22 +28,26 @@
 						<li><a href="#">Мелорин</a></li>
 					</ul>
 				</li>
+			</div>
+				
 				<li><a href="blank.html">Доставка и оплата</a></li>
 				<li><a href="blank.html">О компании</a></li>
 			</ul>
+				</div>
+			</div>
 		</nav>
 			
-			<div>
+			<div class="user-navigation">
 				<div class="search-button">
 					Поиск
-					<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+					<form class="search-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
 							<input type="search" id="search-field" placeholder="Что ищем?">
 							<label class="visually-hidden" for="search-field">Поле поиска</label>
 						</form>
 				</div>
 
 				<div>Вход
-		<form class="login-field" action="https://echo.htmlacademy.ru" method="post">
+		<form class="login-field visually-hidden" action="https://echo.htmlacademy.ru" method="post">
 			<p>
 				<input type="email" id="login-form" placeholder="Электронная почта" required>
 				<label class="visually-hidden" for="login-form">Электронная почта</label>
@@ -54,17 +61,16 @@
 			<a href="#">Новая регистрация</a>
 		</form>
 	</div>
-	<div>
+	<div class="basket">
 	Корзина	
-	</div>>
+	</div>
 		</div>
-			<div>
+			<div class="contacts">
 				<p>с 10 до 20 ежедневно</p>
 				<a href="tel:88124502525">8 812 450-25-25</a>
 			</div>
-
 	</header>
-	<main>
+	<main class="container">
 		<h1 class="visually-hidden">Главная страница</h1>
 		<section class="slide">
 			<h2 class="visually-hidden">Постеры с популярными позициями</h2>
@@ -74,12 +80,12 @@
 					<h3>Крем-брюле и пломбир с малиновым джемом</h3>
 					<a href="#">Дайте оба!</a>
 			</li>
-			<li>
+			<li class="visually-hidden">
 				<img src="https://via.placeholder.com/150x100" height="582" width="639" alt="Шоколадный пломбир и лимонный сорбет">
 				<h3>Шоколадный пломбир и лимонный сорбет</h3>
 				<a href="#">Дайте оба!</a>
 			</li>
-			<li>
+			<li class="visually-hidden">
 				<img src="https://via.placeholder.com/150x100" height="582" width="639" alt="Пломбир с помадкой и клубничный щербет">
 				<h3>Пломбир с помадкой и клубничный щербет</h3>
 				<a href="#">Дайте оба!</a>>
@@ -91,24 +97,24 @@
 				<li><input type="radio"></li>
 			</ul>
 		</section>
-		<section>
+		<section class="promo">
 			<h2 class="visually-hidden">Акции</h2>	
-			<ul>
-				<li>	
+			<ul class="promo-1">
+				<li class="promo-item-1">	
 					<h3>Малинка даром!</h3>
 					<p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 					<a role="button" href="#">Хочу варенье!</a>
 				</li>
 			</ul>
-			<ul>
-				<li>
+			<ul class="promo-2">
+				<li class="promo-item-2">
 					<h3>Шоколадки даром!</h3>
 					<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
 					<a role="button" href="#">Хочу шоколадки!</a>
 				</li>
 			</ul>
 		</section>
-		<section>
+		<section class="popular-items">
 			<h2 class="visually-hidden">Хиты</h2>
 			<ul>
 				<li>
@@ -134,7 +140,7 @@
 			</ul>
 		</section>
 
-		<section>
+		<section class="features">
 			<h2 class="visually-hidden">Преимущества</h2>
 			<h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства</h2>
 			<ul>
@@ -149,25 +155,25 @@
 			</ul>
 		</section>
 	
-			<article>
+			<article class="news">
 				<h2>Новое в нашем блоге</h2>
 				<a>10 способов сервировки фруктовых щербетов к столу</a>
 			</article>
-		<section>
+		<section class="subscription">
 			<h2 class="visually-hidden">Подписка</h2>
 			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
 				Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-				<form>
+				<form type="submit">
 					<input type="email" id="email-field" name="email" placeholder="Электронная почта">
 					<label class="visually-hidden" for="email-field">Электронная почта</label>
 					<button type="submit">Отправить</button>
 				</form>
 		</section>
-		<section>
+		<section class="map">
 			<h2 class="visually-hidden">Карта</h2>
-			<a href="#"><img src="#" alt="Карта">Карта</a>
+			<a href="#"><img src="#" alt="Карта"></a>
 		</section>
-		<div>
+		<div class="adress">
 			<p>Адрес главного офиса и офлайн-магазина:<br>
 			<p>ул/ Большая Конюшенная, 19/8, Санкт-Петербург</p>
 			<p> для заказов по телефону:<a href="tel:88124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)
@@ -175,26 +181,26 @@
 				<a  href="#" role="button">Форма обратной связи</a>
 		</div>
 	</main>
-	<footer>
-		<ul>
+	<footer class="page-footer">
+		<ul class="social">
 			<li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
 			<li><a href="#"><span class="visually-hidden">Instagram</span></a></li>
 			<li><a href="#"><span class="visually-hidden">FB</span></a></li>
 			<li><a href="#"><span class="visually-hidden">VK</span></a></li>
 		</ul>
-		<ul>
+		<ul class="standarts">
 			<li><a href="blank.html">Для поставщиков</a></li>
 			<li><a href="blank.html">О производстве</a></li>
 			<li><a href="blank.html">Наши документы</a></li>				
 			<li><a href="blank.html">Экологические стандарты</a></li>
 		</ul>
-		<div>
+		<div class="coperight">
 			<img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
 			<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
 		</div>
 	</footer>
 
-	<section class="subscribe-popup">
+	<section class="subscribe-popup visually-hidden">
 		<h2 class="visually-hidden">Форма подписки</h2>
 		<h2>Мы обязательно вам ответим!</h2>
 		<form action="https://echo.htmlacademy.ru" method="post">
