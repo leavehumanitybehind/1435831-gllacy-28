@@ -1,16 +1,70 @@
 :root {
 	--basic-white: #ffffff;
+	--white-active: #ededed;
+	--opacity-white: rgba(255, 255, 255, 0.2);
 	--background-index-1: #849d8f;
-}
-
-body {
-	font-family: "Roboto";
-	background-color: var(--background-index-1);
-	color: var(--basic-white);
+	--background-index-2: #8996a6;
+	--background-index-3: #9d8b84;
+	--light-black: #323232;
+	--basic-brick: #f26843;
+	--hover-brick: #e74a35;
+	--brick-active: #d07058;
 }
 @font-face {
 	font-family: "Roboto";
 	src: local("fonts");
+}
+
+body {
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Roboto";
+	background-color: var(--background-index-1);
+	color: var(--basic-white);
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+li {
+	list-style-type: none;
+}
+a {
+	color: var(--basic-white);
+	text-decoration: none;
+}
+/* header */
+.site-navigation a {
+	color: var(--basic-white);
+}
+.main-navigation-wrapper a:active {
+	background-color: var(--basic-brick);
+	border-radius: 26px;
+	color: var(--light-black);
+}
+.main-navigation-wrapper a:hover {
+	background-color: var(--basic-white);
+	border-radius: 26px;
+	color: var(--light-black);
+}
+.main-navigation-wrapper a:active {
+	background-color: var(--white-active);
+	border-radius: 26px;
+	color: var(--light-black);
+}
+.login {
+	background-image: url("img/entrance.svg");
+	background-repeat: no-repeat;
+}
+
+.bread-crunch {
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
 }
 .visually-hidden {
 	display: none;
