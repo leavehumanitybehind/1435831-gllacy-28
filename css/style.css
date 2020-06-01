@@ -100,21 +100,33 @@ ______________grid_____________
 /*
 _______________link__________*/
 
-.site-navigation a, .contacts-link, .promo a, .popular a, .standarts a, .list-item a, .paginator a {
+.site-navigation a,
+.contacts-link,
+.promo a,
+.popular a,
+.standarts a,
+.list-item a,
+.paginator a {
 	color: var(--basic-text-color);
 }
 
-.standarts a:hover, .standarts a:active, .copyright a:hover, .copyright a:active, .bread-crumb-link:hover, .bread-crumb-link:focus {
+.standarts a:hover,
+.standarts a:active,
+.copyright a:hover,
+.copyright a:active,
+.bread-crumb-link:hover,
+.bread-crumb-link:focus {
 	color: var(--link-color);
 }
 
-.standarts a, .copyright a {
+.standarts a,
+.copyright a {
 	text-decoration: underline;
 	-webkit-text-decoration-color: var(--basic-text-color);
 	text-decoration-color: var(--basic-text-color);
 }
 
-/* 
+/*
 ____________________________________header________________________________ */
 
 .search-button::before {
@@ -146,6 +158,12 @@ ____________________________________header________________________________ */
 	line-height: 24px;
 }
 
+/*______popular_____________*/
+
+.popular-item img {
+	border-radius: 50%;
+}
+
 /* ______________________________bread-crumbs _______________________*/
 
 .bread-crumb {
@@ -169,7 +187,7 @@ ____________________________________header________________________________ */
 	text-decoration-color: var(--opacity-white);
 }
 
-/* 
+/*
 ___________________________features__________________________
  */
 
@@ -203,7 +221,7 @@ ___________________________features__________________________
 	content: url("../img/thermometer.svg");
 }
 
-/* 
+/*
 ___________________news______________________
  */
 
@@ -228,7 +246,7 @@ ___________________news______________________
 	text-decoration: underline;
 }
 
-/*  subscription */
+/*subscription */
 
 .subscription {
 	width: 560px;
@@ -241,7 +259,8 @@ ___________________news______________________
 	background-color: var(--basic-color-bg);
 }
 
-.subscription button, .adress button {
+.subscription button,
+.adress button {
 	background-color: var(--button-color);
 	color: var(--basic-text-color);
 	font-weight: bold;
@@ -250,7 +269,8 @@ ___________________news______________________
 	border-radius: 70px;
 }
 
-.subscription button:hover, .adress button:hover {
+.subscription button:hover,
+.adress button:hover {
 	background-color: var(--button-color-hover);
 	color: var(--basic-text-color);
 	font-weight: bold;
@@ -259,7 +279,8 @@ ___________________news______________________
 	border-radius: 70px;
 }
 
-.subscription button:active, .adress button:active {
+.subscription button:active,
+.adress button:active {
 	background-color: var(--button-color-active);
 	color: var(--basic-text-color);
 	font-weight: bold;
@@ -268,27 +289,30 @@ ___________________news______________________
 	border-radius: 70px;
 }
 
-/* 
+/*
 ________________________catalog__________________________ */
 
 .list-item li:hover {
 	background-color: var(--basic-color-bg);
 }
 
-.list-item h3, .popular-item h3 {
+.list-item h3,
+.popular-item h3 {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 	text-align: center;
 }
 
-.list-item sub, .popular-item sub {
+.list-item sub,
+.popular-item sub {
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 35px;
 }
 
-.list-item p, .popular-item p {
+.list-item p,
+.popular-item p {
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 45px;
@@ -348,7 +372,7 @@ _____________map____________
 	color: var(--basic-text-color-hover);
 }
 
-/* 
+/*
 ___________________footer_____________________
  */
 
