@@ -26,149 +26,139 @@ body {
 a {
 	text-decoration: none;
 }
-.page {
-	height: 100%;
-}
+
+/*
+______________grid_____________
+ */
+
 .page-body {
 	min-height: 100%;
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
-	align-content: start;
+	margin: auto;
+	padding: auto;
 }
-.main-page-wrapper {
+
+.page-header {
 	display: flex;
 	justify-content: space-between;
 }
-.site-navigation {
-	width: 535px;
+
+.main-navigation {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+}
+
+.site-navigation {
+	display: flex;
+	width: 355px;
+	justify-content: space-between;
 	list-style: none;
 }
 
-.user-navigation,
-.user-navigation::before {
-	justify-content: space-around;
-	width: 280px;
+.user-navigation {
+	display: flex;
 }
+
 .user-navigation-button {
 	display: flex;
+	justify-content: space-between;
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	width: 250px;
 }
-.contacts {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-}
+
 .slider-list {
 	display: flex;
 	justify-content: center;
 }
+
 .controls {
 	display: inline-flex;
 	list-style: none;
 }
+
 .promo-list {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 40px;
 }
-.popular-list {
-	list-style: none;
-	display: flex;
-	justify-content: space-around;
-}
-.popular-item {
-	width: 267px;
-}
+
 .feature-list {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 47px;
+	margin-bottom: 40px;
 }
+
 .feature-item {
 	width: 540px;
 }
+
 .info {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 40px;
 }
-.news {
-	width: 560px;
-}
-.subscription {
-	width: 560px;
-}
-.map {
-	width: 1200px;
-}
-.adress {
-	width: 303px;
-	color: var(--basic-text-color-hover);
-}
-.page-footer {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-.social {
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	width: 186px;
-}
-.standarts {
-	width: 340px;
-	list-style: none;
-}
+
 /*
 _______________link__________*/
-.site-navigation a,
-.contacts-link,
-.promo a,
-.popular a,
-.standarts a,
-.list-item a,
-.paginator a {
+
+.site-navigation a, .contacts-link, .promo a, .popular a, .standarts a, .list-item a, .paginator a {
 	color: var(--basic-text-color);
 }
-.standarts a:hover,
-.standarts a:active,
-.copyright a:hover,
-.copyright a:active,
-.bread-crumb-link:hover,
-.bread-crumb-link:focus {
+
+.standarts a:hover, .standarts a:active, .copyright a:hover, .copyright a:active, .bread-crumb-link:hover, .bread-crumb-link:focus {
 	color: var(--link-color);
 }
 
-.standarts a,
-.copyright a {
+.standarts a, .copyright a {
 	text-decoration: underline;
 	-webkit-text-decoration-color: var(--basic-text-color);
 	text-decoration-color: var(--basic-text-color);
 }
+
 /* 
 ____________________________________header________________________________ */
 
 .search-button::before {
 	content: url(../img/loupe.svg);
 }
+
 .login::before {
 	content: url("../img/entrance.svg");
 }
+
+/*_______________________________contacts_________*/
+
 .contacts {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-top: -23px;
+}
+
+.contacts-shedule {
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.contacts-link {
+	font-weight: bold;
 	font-size: 22px;
 	line-height: 24px;
 }
 
 /* ______________________________bread-crumbs _______________________*/
 
+.bread-crumb {
+	display: flex;
+	justify-content: space-between;
+	margin-top: -23px;
+	width: 224px;
+}
+
 .bread-crumb li {
+	list-style: none;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
@@ -220,6 +210,8 @@ ___________________news______________________
  */
 
 .news {
+	width: 560px;
+	height: 220px;
 	color: var(--basic-text-color-hover);
 	background-image: url("../img/strawberry-background.jpg");
 }
@@ -230,7 +222,7 @@ ___________________news______________________
 	line-height: 22px;
 }
 
-.news-link {
+.news a {
 	color: var(--basic-text-color-hover);
 	font-weight: bold;
 	font-size: 24px;
@@ -241,6 +233,8 @@ ___________________news______________________
 /*  subscription */
 
 .subscription {
+	width: 560px;
+	height: 220px;
 	color: var(--basic-text-color-hover);
 	font-size: 16px;
 	line-height: 22px;
@@ -249,8 +243,7 @@ ___________________news______________________
 	background-color: var(--basic-color-bg);
 }
 
-.subscription button,
-.adress button {
+.subscription button, .adress button {
 	background-color: var(--button-color);
 	color: var(--basic-text-color);
 	font-weight: bold;
@@ -259,8 +252,7 @@ ___________________news______________________
 	border-radius: 70px;
 }
 
-.subscription button:hover,
-.adress button:hover {
+.subscription button:hover, .adress button:hover {
 	background-color: var(--button-color-hover);
 	color: var(--basic-text-color);
 	font-weight: bold;
@@ -269,8 +261,7 @@ ___________________news______________________
 	border-radius: 70px;
 }
 
-.subscription button:active,
-.adress button:active {
+.subscription button:active, .adress button:active {
 	background-color: var(--button-color-active);
 	color: var(--basic-text-color);
 	font-weight: bold;
@@ -286,37 +277,100 @@ ________________________catalog__________________________ */
 	background-color: var(--basic-color-bg);
 }
 
-.list-item h3 {
+.list-item h3, .popular-item h3 {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 	text-align: center;
 }
 
-.list-item sub {
+.list-item sub, .popular-item sub {
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 35px;
 }
 
-.list-item p {
+.list-item p, .popular-item p {
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 45px;
 }
+
 .catalog-list {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	list-style: none;
+	gap: 26px;
 }
+
 .list-item {
 	width: 267px;
+}
+
+.popular-list {
+	list-style: none;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 26px;
+	margin-bottom: 40px;
+}
+
+.popular-item {
+	width: 267px;
+}
+
+/*
+_____________map____________
+*/
+
+.map {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.adress {
+	position: absolute;
+	top: 63px;
+	right: 27px;
+	width: 302px;
+	color: var(--basic-text-color-hover);
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.adress-info {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.adress a {
+	color: var(--basic-text-color-hover);
 }
 
 /* 
 ___________________footer_____________________
  */
+
+.page-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.social {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 186px;
+}
+
+.standarts {
+	display: flex;
+	width: 340px;
+	list-style: none;
+}
 
 .twitter-icon::before {
 	content: url(../img/twitter.svg);
@@ -347,9 +401,13 @@ ___________________footer_____________________
 /*
 ___________________- paginator____________________
  */
+
 .paginator {
+	display: flex;
+	justify-content: flex-end;
 	list-style: none;
 }
+
 .paginator-active {
 	color: var(--basic-text-color);
 	background-color: var(--basic-color);
@@ -365,6 +423,7 @@ ___________________- paginator____________________
 .next::before {
 	content: url(../img/icon-right-small.svg);
 }
+
 .visually-hidden {
 	display: none;
 }
