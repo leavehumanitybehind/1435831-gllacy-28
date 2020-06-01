@@ -31,27 +31,25 @@ a {
 ______________grid_____________
  */
 
+.content-container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 30px;
+}
+
 .page-body {
 	min-height: 100%;
 	display: grid;
 	grid-template-rows: min-content 1fr min-content;
-	margin: auto;
-	padding: auto;
 }
 
-.page-header {
+.main-nav-container {
 	display: flex;
 	justify-content: space-between;
-}
-
-.main-navigation {
-	display: flex;
 }
 
 .site-navigation {
 	display: flex;
-	width: 355px;
-	justify-content: space-between;
 	list-style: none;
 }
 
@@ -78,7 +76,7 @@ ______________grid_____________
 
 .promo-list {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	margin-bottom: 40px;
 }
 
