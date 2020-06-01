@@ -26,7 +26,10 @@ body {
 a {
 	text-decoration: none;
 }
-
+img {
+	max-width: 100%;
+	height: auto;
+}
 /*
 ______________grid_____________
  */
@@ -43,25 +46,38 @@ ______________grid_____________
 	grid-template-rows: min-content 1fr min-content;
 }
 
-.main-nav-container {
+.main-navigation {
+	display: flex;
+	align-items: center;
+}
+.main-navigation-wrapper {
+	width: 100%;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 27px;
+}
+.main-navigation-wrapper .container {
 	display: flex;
 	justify-content: space-between;
 }
-
+.main-header-logo {
+	margin-right: 12px;
+}
 .site-navigation {
-	display: flex;
+	width: 440px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
 .user-navigation {
-	display: flex;
+	max-width: 250px;
 }
 
 .user-navigation-button {
-	display: flex;
-	justify-content: space-between;
+	padding-left: 50px;
 	list-style: none;
-	width: 250px;
 }
 
 .slider-list {
