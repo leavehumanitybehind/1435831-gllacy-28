@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page " lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,15 +10,14 @@
 </head>
 
 <body class="page-body">
-  <div class="content-container">
+  <div class="container">
     <header class="page-header">
-      <div class="main-nav-container">
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li><a class="main-header-logo"><img src="img/logo.svg" width="154" height="64"
-                  alt="Логотип магазина мороженого Глейси"></a></li>
-            <li><a href="catalog.html">Каталог</a>
-              <!--
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a class="main-header-logo"><img src="img/logo.svg" width="154" height="64"
+                alt="Логотип магазина мороженого Глейси"></a></li>
+          <li><a href="catalog.html">Каталог</a>
+            <!--
             <ul class="submenu">
               <li><a>Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -26,64 +25,61 @@
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>	-->
-            </li>
-            <li><a href="blank.html">Доставка и оплата</a></li>
-            <li><a href="blank.html">О компании</a></li>
-          </ul>
-        </nav>
-        <div class="user-navigation">
-          <ul class="user-navigation-button">
-            <li class="search-button user-item">
-              <span class="visually-hidden">Поиск</span>
-              <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-                <input type="search" id="search-field" placeholder="Что ищем?">
-                <label class="visually-hidden" for="search-field">Поле поиска</label>
-                <button class="visually-hidden" type="submit">Отправить</button>
-              </form>
-            </li>
-            <li class="user-item login">
-              Вход
-              <form class="login-field visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <input type="email" id="login-form" placeholder="Электронная почта" required>
-                  <label class="visually-hidden" for="login-form">Электронная почта</label>
-                </p>
-                <p>
-                  <input type="password" id="password-form-main" placeholder="Пароль" required>
-                  <label class="visually-hidden" for="password-form-main">Пароль</label>
-                </p>
-                <button type="submit">Войти</button>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </form>
-            </li>
-            <li class="user-item basket">
-              Корзина
-              <div class="visually-hidden">
-                <table>
-                  <tr>
-                    <td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
-                    <td><img src="img/orange-ice.jpg" height="33" width="33" alt="Пломбир с апельсиновым джемом"></td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1,5 кг х 200 руб.</td>
-                    <td>300 руб.</td>
-                  </tr>
-                  <tr>
-                    <td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
-                    <td><img src="img/strawberry-ice.jpg" height="33" width="33"
-                        alt="Клубничный пломбир с белым шоколадом"></td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1,5 кг х 300 руб.</td>
-                    <td>450 руб.</td>
-                  </tr>
-                </table>
-                <p>Итого 750 руб.</p>
-                <a href="#">Оформить заказ</a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+          </li>
+          <li><a href="blank.html">Доставка и оплата</a></li>
+          <li><a href="blank.html">О компании</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class=" user-item-navigation search-button">
+            <span class="visually-hidden">Поиск</span>
+            <form class="search-form visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" id="search-field" placeholder="Что ищем?">
+              <label class="visually-hidden" for="search-field">Поле поиска</label>
+              <button class="visually-hidden" type="submit">Отправить</button>
+            </form>
+          </li>
+          <li class="user-item-navigation login-button">
+            Вход
+            <form class="login-field visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <input type="email" id="login-form" placeholder="Электронная почта" required>
+                <label class="visually-hidden" for="login-form">Электронная почта</label>
+              </p>
+              <p>
+                <input type="password" id="password-form-main" placeholder="Пароль" required>
+                <label class="visually-hidden" for="password-form-main">Пароль</label>
+              </p>
+              <button type="submit">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </li>
+          <li class="user-item-navigation basket-button">
+            Корзина
+            <div class="visually-hidden">
+              <table>
+                <tr>
+                  <td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
+                  <td><img src="img/orange-ice.jpg" height="33" width="33" alt="Пломбир с апельсиновым джемом"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><button type="button"><span class="visually-hidden">Закрыть</span></button></td>
+                  <td><img src="img/strawberry-ice.jpg" height="33" width="33"
+                      alt="Клубничный пломбир с белым шоколадом"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
+              <p>Итого 750 руб.</p>
+              <a href="#">Оформить заказ</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
       <div class="contacts">
         <p class="contacts-shedule">с 10 до 20 ежедневно</p>
         <a class="contacts-link" href="tel:88124502525">8 812 450-25-25</a>
@@ -295,7 +291,7 @@
     <div class="copyright">
       <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
-
+    </div>
   </footer>
 </body>
 
