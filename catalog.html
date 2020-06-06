@@ -97,7 +97,7 @@
       <h1>Сливочное мороженое</h1>
       <section class="filter-list">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="filter-container" type="https://echo.htmlacademy.ru" method="get">
           <p>
             <label for="item-sort">Сортировка</label>
             <select name="sort" id="item-sort">
@@ -114,7 +114,7 @@
           </div>
           <fieldset>
             <legend>Жирность:</legend>
-            <ul>
+            <ul class="fat-filter">
               <li>
                 <input type="radio" name="fat" id="zero-fat-filter" value="zero-fat">
                 <label for="zero-fat-filter">0%</label>
@@ -135,7 +135,7 @@
           </fieldset>
           <fieldset>
             <legend>Наполнители:</legend>
-            <ul>
+            <ul class="topping-filter">
               <li>
                 <input type="checkbox" name="topping" id="chocolate-topping-filter" value="chocolate-topping" checked>
                 <label for="chocolate-topping-filter">Шоколадные</label>
