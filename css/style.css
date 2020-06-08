@@ -14,7 +14,8 @@
 	--input-active: #5b9ddf;
 	--input-hover: #d3d3d3;
 	--field-shadow: #56645c;
-	--field-background: #f8f7f4;
+	--field-background: var(--field-background);
+	--line: rgba(50, 50, 50, 0.2);
 }
 
 body {
@@ -84,7 +85,7 @@ ______________grid_____________
 .container {
 	width: 1146px;
 	margin: 0 auto;
-	padding: 8px 27px 0px;
+	padding: 0px 27px;
 }
 .site-wrapper {
 	background-repeat: no-repeat;
@@ -105,6 +106,9 @@ ______________grid_____________
 	background-image: url("../img/slider-3.png");
 }
 /*header grid*/
+.page-header {
+	padding-top: 8px;
+}
 .main-navigation {
 	display: flex;
 	justify-content: space-between;
@@ -154,6 +158,7 @@ ______________grid_____________
 	box-shadow: inset 0px 2px 1px var(--field-shadow);
 }
 .site-navigation-link--active {
+	position: relative;
 	margin: 0;
 	margin-right: 4px;
 	margin-left: 1px;
@@ -163,6 +168,7 @@ ______________grid_____________
 	border-radius: 26px;
 }
 /*  submenu*/
+
 .site-navigation-item:first-child {
 	position: relative;
 }
@@ -173,14 +179,14 @@ ______________grid_____________
 	left: -7px;
 	width: 143px;
 	min-height: 171px;
-	background-color: var(--field-background);
+	background-color: var(--basic-text-color);
 	border-radius: 5px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	box-shadow: 2px 10px 20px 5px var(--field-shadow);
-	z-index: 20;
 }
+
 .submenu-item {
 	margin-bottom: 5px;
 }
@@ -195,12 +201,18 @@ ______________grid_____________
 	text-decoration: none;
 	font-weight: normal;
 }
+.site-navigation-item:hover .submenu {
+	display: block;
+	z-index: 1;
+}
+
 /* submenu link styles */
+
 .submenu-item .submenu-link-first {
 	position: relative;
 	margin-top: 8px;
 	font-weight: bold;
-	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+	border-bottom: 1px solid var(--line);
 }
 .submenu-item .submenu-link:hover {
 	background-color: #fbded7;
@@ -247,16 +259,20 @@ ______________grid_____________
 	top: 39px;
 	right: -7px;
 	padding: 20px 15px;
-	background-color: var(--field-background);
+	background-color: #f8f7f4;
 	box-shadow: 3px 5px 25px 3px var(--field-shadow);
 	border-radius: 4px;
+}
+.search-button:hover .search-form {
+	display: block;
+	z-index: 1;
 }
 .search-form input {
 	padding-left: 13px;
 	width: 311px;
-	height: 44px;
+	padding: 15px;
 	border: 1px solid var(--input-hover);
-	background-color: var(--field-background);
+	background-color: var(--basic-text-color);
 }
 /* input conditions */
 .search-form input:hover,
@@ -294,24 +310,27 @@ ______________grid_____________
 	color: var(--basic-text-color-hover);
 }
 /*login form  */
+
 .login-field {
-	visibility: hidden;
 	position: absolute;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	top: 40px;
 	right: 0;
-	background-color: var(--field-background);
+	background-color: #f8f7f4;
 	border-radius: 5px;
 	box-shadow: 3px 5px 25px 3px var(--field-shadow);
-	padding: 20px 17px 22px 19px;
+	padding: 20px 17px 20px 19px;
+}
+.login-button:hover .login-field {
+	display: flex;
+	z-index: 1;
 }
 .login-field input {
 	flex-grow: 1;
 	width: 241px;
-	height: 44px;
-	padding-left: 15px;
+	padding: 15px;
 	border-radius: 5px;
 	border: 1px solid var(--input-hover);
 }
@@ -371,6 +390,10 @@ ______________grid_____________
 	color: var(--basic-text-color-hover);
 }
 /*basket table */
+.basket-full:hover .table-form {
+	display: block;
+	z-index: 1;
+}
 .table-form {
 	display: none;
 	position: absolute;
@@ -388,7 +411,7 @@ table {
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 16px;
-	border-bottom: 1px solid rgba(50, 50, 50, 0.2);
+	border-bottom: 1px solid var(--line);
 	padding-top: 20px;
 	padding-left: 17px;
 	padding-right: 15px;
@@ -470,19 +493,23 @@ table .basket-item {
 	width: 17px;
 	height: 17px;
 	background-color: transparent;
-	border: 2px solid #ffffff;
+	border: 2px solid var(--basic-text-color);
 	border-radius: 50%;
 	cursor: pointer;
 }
+.controls button:hover {
+	background-color: var(--bg-color-hover-);
+}
 .controls .current {
-	background-color: #ffffff;
+	background-color: var(--basic-text-color);
 }
 /*    slider   */
 .slider {
 	position: relative;
 	padding-top: 321px;
 	text-align: center;
-	color: #ffffff;
+	color: var(--basic-text-color);
+	margin-bottom: 30px;
 }
 .slider-list {
 	margin: 0;
@@ -505,7 +532,7 @@ table .basket-item {
 	font-size: 31px;
 	line-height: 41px;
 	text-align: center;
-	color: #ffffff;
+	color: var(--basic-text-color);
 	vertical-align: top;
 	text-decoration: none;
 	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
@@ -535,22 +562,22 @@ table .basket-item {
 	font-weight: bold;
 	font-size: 35px;
 	line-height: 41px;
-	padding: 0;
+	padding: 16px;
 	margin: 0;
 }
 .promo-list p {
+	margin: 0;
+	padding: 16px;
 	font-size: 18px;
 	line-height: 22px;
 }
 .promo-item-rasberry {
-	padding: 16px;
 	position: relative;
 	height: 229px;
 	background: url(../img/rasberry-background.jpg) no-repeat;
 	border-radius: 16px;
 }
 .promo-item-chocolate {
-	padding: 16px;
 	position: relative;
 	height: 229px;
 	background: url(../img/chocolate-background.jpg) no-repeat;
@@ -588,8 +615,7 @@ table .basket-item {
 .bread-crumb-link {
 	position: relative;
 	color: var(--basic-text-color);
-	text-decoration: underline;
-	text-decoration-color: var(--basic-color-bg);
+	border-bottom: 1px solid var(--bg-color-hover-);
 }
 .bread-crumb-link::after {
 	content: ">>";
@@ -773,16 +799,14 @@ ___________________news______________________
 .subscription-container input {
 	position: relative;
 	display: inline-block;
-	padding-left: 12px;
+	padding: 14px 12px;
 	width: 368px;
-	height: 44px;
 	margin-right: 9px;
 	border-radius: 5px;
 	border: 1px solid var(--bg-color-hover-);
 }
 
-.subscription button,
-.adress button {
+.subscription button {
 	position: absolute;
 	background-color: var(--button-color);
 	color: var(--basic-text-color);
@@ -790,7 +814,7 @@ ___________________news______________________
 	font-size: 18px;
 	line-height: 24px;
 	border-radius: 70px;
-	padding: 13px 16px;
+	padding: 14px 12px;
 	border: none;
 	box-shadow: 0px 2px 2px var(--button-shadow);
 }
@@ -799,7 +823,8 @@ ___________________news______________________
 .adress button:hover,
 .login-form-button:hover,
 .popup-button:hover,
-.list-item-link:hover {
+.list-item-link:hover,
+.promo-button:hover {
 	background-color: var(--button-color-hover);
 	box-shadow: 0px 2px 2px var(--button-shadow);
 }
@@ -807,28 +832,154 @@ ___________________news______________________
 .subscription button:active,
 .adress button:active,
 .login-form-button:active,
-.popup-button:active .list-item-link:active {
+.popup-button:active,
+.list-item-link:active,
+.promo-button:active {
 	background-color: var(--button-color-active);
 	border-radius: 50px;
 	box-shadow: inset 0px 2px 2px #942718;
 }
 /* filters */
+
 .filter-container {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 860px;
 	margin-bottom: 40px;
 }
 fieldset {
+	padding: 0;
+	margin: 0;
 	border: none;
+}
+.filter-list p {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 7px;
+}
+.select-title {
+	display: block;
+	margin-bottom: 7px;
+}
+.filter-select {
+	margin-right: 15px;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 196px;
+	height: 36px;
+	border-radius: 20px;
+	border: none;
+	padding-left: 16px;
+	color: var(--basic-text-color);
+	background: var(--bg-color-hover-) url("../img/select-arrow.svg") no-repeat 170px center;
+}
+.filter-select:hover {
+	background-color: var(--basic-text-color);
+	color: var(--basic-text-color-hover);
+}
+.price-range {
+	display: block;
+	margin-bottom: 7px;
+	margin-right: 15px;
+}
+.price-filter {
+	position: relative;
+	width: 218px;
+	height: 19px;
+	background-color: var(--bg-color-hover-);
+	border-radius: 20px;
+	margin-bottom: 15px;
+	padding-top: 17px;
+	padding-left: 21px;
+	padding-right: 21px;
+}
+
+.price-filter .scale {
+	background: var(--bg-color-hover-);
+	height: 2px;
+}
+.price-filter .bar {
+	position: absolute;
+	left: 41px;
+	width: 50%;
+	background: var(--field-background);
+	height: 2px;
+}
+.price-filter .toggle {
+	position: absolute;
+	top: 7px;
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 10px solid var(--basic-text-color);
+	background-color: #ababab;
+	border-radius: 50%;
+}
+.price-filter .toggle:hover {
+	width: 5px;
+	height: 5px;
+}
+.price-filter .toggle-min {
+	left: 41px;
+	cursor: pointer;
+}
+.price-filter .toggle-max {
+	left: 172px;
+	cursor: pointer;
+}
+legend {
+	margin-bottom: 7px;
 }
 .fat-filter {
 	display: flex;
 	flex: wrap;
 	list-style: none;
-	padding: 0;
 	margin: 0;
+	padding: 12px 13px 0px;
+	background-color: var(--bg-color-hover-);
+	border-radius: 20px;
+	height: 28px;
+}
+.fat-filter input {
+	display: none;
+}
+.fat-filter label {
+	margin-right: 12px;
+	position: relative;
+	padding-left: 46px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.fat-filter input:checked + label::before {
+	content: "";
+	position: absolute;
+	left: 18px;
+	top: 3px;
+	width: 10px;
+	height: 10px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+}
+.fat-filter label::after {
+	content: "";
+	position: absolute;
+	left: 10px;
+	top: -5px;
+	width: 20px;
+	height: 20px;
+	border: 3px solid rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+}
+.fat-filter input:checked:hover + label:hover::before {
+	left: 19px;
+	top: 4px;
+	width: 10px;
+	height: 10px;
+	background: var(--basic-text-color);
+}
+.fat-filter label:hover::after {
+	border: 4px solid var(--basic-text-color);
 }
 
 .topping-filter {
@@ -837,6 +988,66 @@ fieldset {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	background-color: var(--bg-color-hover-);
+	border-radius: 20px;
+	height: 21px;
+	padding: 10px 3px 6px 16px;
+	width: 700px;
+}
+.topping-filter label {
+	margin-right: 16px;
+	padding-left: 32px;
+	position: relative;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+}
+.topping-filter input {
+	display: none;
+}
+fieldset:last-of-type label::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 3px;
+}
+fieldset:last-of-type label:hover::after {
+	border: 2px solid var(--basic-text-color);
+}
+
+input[type=checkbox]:checked + label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 25px;
+	height: 20px;
+	background-color: inherit;
+	background: url(../img/checkbox-on.svg) no-repeat;
+}
+.button-filter {
+	margin: 24px 0 0 11px;
+	padding: 5px 26px 5px 28px;
+	font-weight: 500;
+	background-color: var(--bg-color-hover-);
+	border: 2px solid var(--basic-text-color);
+	min-height: 37px;
+	border-radius: 20px;
+	color: var(--basic-text-color);
+}
+.button-filter:hover {
+	background-color: var(--basic-text-color);
+	color: var(--basic-text-color-hover);
+}
+.button-filter:active {
+	background-color: var(--basic-text-color);
+	color: var(--basic-text-color-hover);
+	box-shadow: inset 0px 2px 1px var(--field-shadow);
+	outline: none;
 }
 /*
 ________________________catalog__________________________ */
@@ -889,17 +1100,35 @@ _____________map____________
 	position: absolute;
 	top: 63px;
 	right: 27px;
-	width: 302px;
+	width: 238px;
 	color: var(--basic-text-color-hover);
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 20px;
+	background-color: var(--basic-text-color);
+	border-radius: 16px;
+	padding: 20px 20px;
 }
 
-.adress-info {
+.adress-text {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 24px;
+}
+.adress p {
+	margin-bottom: 30px;
+}
+.adress-button {
+	background-color: var(--button-color);
+	color: var(--basic-text-color);
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	border-radius: 70px;
+	padding: 13px 16px;
+	width: 240px;
+	border: none;
+	box-shadow: 0px 2px 2px var(--button-shadow);
 }
 
 .adress a {
@@ -1021,7 +1250,7 @@ li .paginator-active {
 }
 /* subscribe-popup */
 .subscribe-popup {
-	visibility: hidden;
+	display: none;
 	position: fixed;
 	top: 35%;
 	left: 35%;
@@ -1068,6 +1297,7 @@ li .paginator-active {
 	right: 10px;
 	top: 10px;
 }
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
