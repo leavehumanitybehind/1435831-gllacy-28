@@ -13,10 +13,11 @@
   <div class="container">
     <header class="page-header">
       <nav class="main-navigation">
-        <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64"
+        <a class="main-header-logo"><img src="img/logo.svg" href="index.html" width="154" height="64"
             alt="Логотип магазина мороженого Глейси"></a>
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a class="site-navigation-link--active" href="catalog.html">Каталог</a>
+          <li class="site-navigation-item submenu-container"><a class="underline site-navigation-link--active"
+              href="catalog.html">Каталог</a>
             <ul class="submenu">
               <li class="submenu-item"><a class="submenu-link submenu-link-first">Новинки</a></li>
               <li class="submenu-item"><a class="submenu-link submenu-link-active" href="catalog.html">Сливочное</a>
@@ -26,8 +27,10 @@
               <li class="submenu-item"><a class="submenu-link" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">О компании</a></li>
+          <li class="site-navigation-item"><a class="underline site-navigation-link" href="blank.html">Доставка и
+              оплата</a></li>
+          <li class="site-navigation-item"><a class="underline site-navigation-link" href="blank.html">О компании</a>
+          </li>
         </ul>
         <ul class="user-navigation">
           <li class=" user-navigation-item search-button">
@@ -49,7 +52,7 @@
                 <input type="password" id="password-form-main" placeholder="Пароль" required>
                 <label class="visually-hidden" for="password-form-main">Пароль</label>
               </p>
-              <button type="submit">Войти</button>
+              <button class="btn login-form-button" type="submit">Войти</button>
               <a href="#">Забыли пароль?</a>
               <a href="#">Новая регистрация</a>
             </form>
@@ -79,7 +82,7 @@
                 </tr>
               </table>
               <p>Итого 750 руб.</p>
-              <a class="basket-button-link" href="#">Оформить заказ</a>
+              <a class="btn basket-button-link" href="#">Оформить заказ</a>
             </div>
           </li>
         </ul>
@@ -90,9 +93,9 @@
       </div>
     </header>
     <main>
-      <ul class="bread-crumb">
-        <li><a class="bread-crumb-link" href="index.html">Главная</a></li>
-        <li><a class="bread-crumb-link" href="catalog.html">Каталог</a></li>
+      <ul class="breadcrumbs">
+        <li><a class="underline breadcrumbs-link" href="index.html">Главная</a></li>
+        <li><a class="underline breadcrumbs-link" href="catalog.html">Каталог</a></li>
         <li><a>Сливочное</a></li>
       </ul>
       <h1>Сливочное мороженое</h1>
@@ -172,7 +175,7 @@
         <ul class="catalog-list">
           <li class="list-item">
             <img src="img/orange-ice.jpg" width="267" height="267" alt="Мороженое с апельсиновым джемом">
-            <h3><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+            <h3><a class="underline" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
 
             <p>310 &#8381;<sub>/кг</sub></p>
 
@@ -180,7 +183,7 @@
           <li class="list-item">
 
             <img src="img/coffee-ice.jpg" width="267" height="267" alt="Сливочно-кофейное мороженое">
-            <h3><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+            <h3><a class="underline" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
 
             <p>380 &#8381;<sub>/кг</sub></p>
 
@@ -188,7 +191,7 @@
           <li class="list-item">
 
             <img src="img/strawberry-ice.jpg" width="267" height="267" alt="Клубничное мороженое">
-            <h3><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+            <h3><a class="underline" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
 
             <p>355 &#8381;<sub>/кг</sub></p>
 
@@ -196,7 +199,7 @@
           <li class="list-item">
 
             <img src="img/caramel-ice.jpg" width="267" height="267" alt="Мороженое крем-брюле">
-            <h3><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+            <h3><a class="underline" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
 
             <p>415 &#8381;<sub>/кг</sub></p>
 
@@ -204,7 +207,7 @@
           <li class="list-item">
 
             <img src="img/lingonberry-ice.jpg" width="267" height="267" alt="Мороженое с брусничным джемом">
-            <h3><a href="#">Сливочное с брусничным джемом</a></h3>
+            <h3><a class="underline" href="#">Сливочное с брусничным джемом</a></h3>
 
             <p>325 &#8381;<sub>/кг</sub></p>
 
@@ -212,7 +215,7 @@
           <li class="list-item">
 
             <img src="img/blueberries-ice.jpg" width="267" height="267" alt="Сливочно-черничное мороженое">
-            <h3><a href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
+            <h3><a class="underline" href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
 
             <p>410 &#8381;<sub>/кг</sub></p>
 
@@ -220,7 +223,7 @@
           <li class="list-item">
 
             <img src="img/lemon-ice.jpg" width="267" height="267" alt="Сливочно-лимонное мороженое">
-            <h3><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
+            <h3><a class="underline" href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
 
             <p>315 &#8381;<sub>/кг</sub></p>
 
@@ -228,7 +231,7 @@
           <li class="list-item">
 
             <img src="img/chocolate-ice.jpg" width="267" height="267" alt="Мороженое с шоколадной стружкой">
-            <h3><a href="#">Сливочное с шоколадной стружкой</a></h3>
+            <h3><a class="underline" href="#">Сливочное с шоколадной стружкой</a></h3>
 
             <p>320 &#8381;<sub>/кг</sub></p>
 
@@ -236,7 +239,7 @@
           <li class="list-item">
 
             <img src="img/vanilla-ice.jpg" width="267" height="267" alt="Сливочно-ванильное мороженое">
-            <h3><a href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
+            <h3><a class="underline" href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
 
             <p>440 &#8381;<sub>/кг</sub></p>
 
@@ -244,7 +247,7 @@
           <li class="list-item">
 
             <img src="img/mentol-ice.jpg" width="267" height="267" alt="Мороженое с ментоловым сиропом">
-            <h3><a href="#">Сливочное с ментоловым сиропом</a></h3>
+            <h3><a class="underline" href="#">Сливочное с ментоловым сиропом</a></h3>
 
             <p>435 &#8381;<sub>/кг</sub></p>
 
@@ -253,7 +256,7 @@
 
 
             <img src="img/dark-chocolate-ice.jpg" width="267" height="267" alt="Мороженое с кусочками шоколада">
-            <h3><a href="#">Сливочное с кусочками черного шоколада</a></h3>
+            <h3><a class="underline" href="#">Сливочное с кусочками черного шоколада</a></h3>
 
             <p>355 &#8381;<sub>/кг</sub></p>
 
@@ -261,7 +264,7 @@
           <li class="list-item">
 
             <img src="img/mint-ice.jpg" width="267" height="267" alt="Мороженое с мятным сиропом">
-            <h3><a href="#">Сливочное с мятным сиропом</a></h3>
+            <h3><a class="underline" href="#">Сливочное с мятным сиропом</a></h3>
 
             <p>420 &#8381;<sub>/кг</sub></p>
 
@@ -292,14 +295,14 @@
         <li><a class="social-link vk-icon" href="#"><span class="visually-hidden">VK</span></a></li>
       </ul>
       <ul class="standarts">
-        <li><a class="standarts-link" href="blank.html">Для поставщиков</a></li>
-        <li><a class="standarts-link" href="blank.html">О производстве</a></li>
-        <li><a class="standarts-link" href="blank.html">Наши документы</a></li>
-        <li><a class="standarts-link" href="blank.html">Экологические стандарты</a></li>
+        <li><a class="underline  standarts-link" href="blank.html">Для поставщиков</a></li>
+        <li><a class="underline standarts-link" href="blank.html">О производстве</a></li>
+        <li><a class="underline standarts-link" href="blank.html">Наши документы</a></li>
+        <li><a class="underline standarts-link" href="blank.html">Экологические стандарты</a></li>
       </ul>
       <div class="copyright">
         <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+        <p>Сделано в <a class="underline " href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </div>
