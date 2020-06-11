@@ -33,16 +33,18 @@
           </li>
         </ul>
         <ul class="user-navigation">
-          <li class=" user-navigation-item search-button">
+          <li class="user-navigation-item search-button">
+            <a class="user-navigation-button  navigation-button-search"></a>
             <span class="visually-hidden">Поиск</span>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" id="search-field" placeholder="Что ищем?">
+              <input type="search" id="search-field" placeholder="Крем-брюле">
               <label class="visually-hidden" for="search-field">Поле поиска</label>
               <button class="visually-hidden" type="submit">Отправить</button>
             </form>
           </li>
           <li class="user-navigation-item login-button">
-            Вход
+            <a class="user-navigation-button  navigation-button-login">Вход</a>
+
             <form class="login-field" action="https://echo.htmlacademy.ru" method="post">
               <p>
                 <input type="email" id="login-form" placeholder="Электронная почта" required>
@@ -53,12 +55,15 @@
                 <label class="visually-hidden" for="password-form-main">Пароль</label>
               </p>
               <button class="btn login-form-button" type="submit">Войти</button>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <div class="login-text">
+                <a class="underline" href="#">Забыли пароль?</a>
+                <a class="underline" href="#">Новая регистрация</a>
+              </div>
             </form>
           </li>
-          <li class="user-navigation-item basket-button basket-full">
-            2 товара
+
+          <li class="user-navigation-item basket-button basket-full-button">
+            <a class="user-navigation-button  navigation-button-basket basket-full">2 товара</a>
             <div class="table-form">
               <table>
                 <tr>
@@ -178,6 +183,11 @@
             <h3><a class="underline" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
 
             <p>310 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
+
 
           </li>
           <li class="list-item">
@@ -186,6 +196,10 @@
             <h3><a class="underline" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
 
             <p>380 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -194,6 +208,10 @@
             <h3><a class="underline" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
 
             <p>355 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -202,6 +220,10 @@
             <h3><a class="underline" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
 
             <p>415 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -210,6 +232,10 @@
             <h3><a class="underline" href="#">Сливочное с брусничным джемом</a></h3>
 
             <p>325 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -218,6 +244,10 @@
             <h3><a class="underline" href="#">Сливочно-черничное с цельными ягодами черники</a></h3>
 
             <p>410 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -226,6 +256,10 @@
             <h3><a class="underline" href="#">Сливочно-лимонное с карамельной присыпкой</a></h3>
 
             <p>315 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -234,6 +268,10 @@
             <h3><a class="underline" href="#">Сливочное с шоколадной стружкой</a></h3>
 
             <p>320 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -242,6 +280,10 @@
             <h3><a class="underline" href="#">Сливочно-ванильное с кусочками шоколада</a></h3>
 
             <p>440 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -250,6 +292,10 @@
             <h3><a class="underline" href="#">Сливочное с ментоловым сиропом</a></h3>
 
             <p>435 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -259,6 +305,10 @@
             <h3><a class="underline" href="#">Сливочное с кусочками черного шоколада</a></h3>
 
             <p>355 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
           <li class="list-item">
@@ -267,10 +317,15 @@
             <h3><a class="underline" href="#">Сливочное с мятным сиропом</a></h3>
 
             <p>420 &#8381;<sub>/кг</sub></p>
+            <div class="icecream-wrapper">
+              <a class="btn button-list">Быстрый просмотр</a>
+
+            </div>
 
           </li>
         </ul>
         <ul class="paginator">
+          <li><a class="paginator-back" href="#"></a></li>
           <li><a class="paginator-active" href="#">1</a></li>
 
           <li><a href="#">2</a></li>
@@ -280,6 +335,7 @@
           <li><a href="#">4</a></li>
 
           <li><a href="#">5</a></li>
+
 
           <li><a class="paginator-next" href="#"></a></li>
 
@@ -295,7 +351,8 @@
         <li><a class="social-link vk-icon" href="#"><span class="visually-hidden">VK</span></a></li>
       </ul>
       <ul class="standarts">
-        <li><a class="underline  standarts-link" href="blank.html">Для поставщиков</a></li>
+        <li class="standarts-link-important"><a class="underline  standarts-link" href="blank.html">Для поставщиков</a>
+        </li>
         <li><a class="underline standarts-link" href="blank.html">О производстве</a></li>
         <li><a class="underline standarts-link" href="blank.html">Наши документы</a></li>
         <li><a class="underline standarts-link" href="blank.html">Экологические стандарты</a></li>
