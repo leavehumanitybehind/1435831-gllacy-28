@@ -10,12 +10,15 @@
 </head>
 
 <body class="page-body">
-  <div class="site-wrapper site-wrapper-main">
+  <input type="radio" id="button-first" name="promo-slider-toggle" checked>
+  <input type="radio" id="button-second" name="promo-slider-toggle">
+  <input type="radio" id="button-third" name="promo-slider-toggle">
+  <div class="site-wrapper">
     <div class="container">
       <header class="page-header">
         <nav class="main-navigation">
-          <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64"
-              alt="Логотип магазина мороженого Глейси"></a>
+          <a class="main-header-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo.svg"
+              width="154" height="64" alt="Логотип магазина мороженого Глейси"></a>
           <ul class="site-navigation">
             <li class="site-navigation-item submenu-container"><a class="underline site-navigation-link"
                 href="catalog.html">Каталог</a>
@@ -68,7 +71,7 @@
           </ul>
         </nav>
         <div class="contacts">
-          <p class="contacts-shedule">с 10 до 20 ежедневно</p>
+          <p class="contacts-shedule">с 10 до 20, ежедневно</p>
           <a class="contacts-link" href="tel:88124502525">8 812 450-25-25</a>
         </div>
       </header>
@@ -76,26 +79,39 @@
         <h1 class="visually-hidden">Главная страница</h1>
         <section class="slider">
           <h2 class="visually-hidden">Постеры с популярными позициями</h2>
-          <ul class="slider-list">
-            <li class="slider-list-item slide-current">
-              <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-              <a class="btn  list-item-link" href="#">Дайте оба!</a>
+          <ul class="promo-slider">
+            <li class="slide-first">
+              <img class="promo-image" src="../img/Slider-1.png" width="639" height="582"
+                alt="Крем-брюле и пломбир с малиновым джемом">
+              <div class="promo-description-wrapper">
+                <p class="promo-description">Крем-брюле и пломбир с малиновым джемом</p>
+                <a href="#" class="btn promo-slider-button">Давайте оба!</a>
+              </div>
             </li>
-            <li class=" slider-list-item slide">
-              alt="Шоколадный пломбир и лимонный сорбет">
-              <h3>Шоколадный пломбир и лимонный сорбет</h3>
-              <a class="btn  list-item-link" href="#">Дайте оба!</a>
+
+            <li class="slide-second">
+              <img class="promo-image" src="../img/Slider-2.png" width="639" height="582"
+                alt="Шоколадный пломбир и лимонный сорбет">
+              <div class="promo-description-wrapper">
+                <p class="promo-description">Шоколадный пломбир и лимонный сорбет</p>
+                <a href="#" class="btn  promo-slider-button">Давайте оба!</a>
+              </div>
             </li>
-            <li class="slider-list-item slide">
-              <h3>Пломбир с помадкой и клубничный щербет</h3>
-              <a class="btn list-item-link" href="#">Дайте оба!</a>>
+
+            <li class="slide-third">
+              <img class="promo-image" src="../img/Slider-3.png" width="639" height="582"
+                alt="Пломбир с помадкой и клубничный щербе">
+              <div class="promo-description-wrapper">
+                <p class="promo-description">Пломбир с помадкой и клубничный щербет</p>
+                <a href="#" class="btn promo-slider-button">Давайте оба!</a>
+              </div>
             </li>
           </ul>
-          <ul class="controls">
-            <li> <button class="current" type="button" aria-label="Первый слайд"></button></li>
-            <li><button type="button" aria-label="Второй слайд"></button></li>
-            <li><button type="button-" aria-label="Третий слайд"></button> </li>
-          </ul>
+          <div class="promo-slider-controls">
+            <label for="button-first"></label>
+            <label for="button-second"></label>
+            <label for="button-third"></label>
+          </div>
         </section>
         <section class="promo">
           <h2 class="visually-hidden">Акции</h2>
@@ -175,17 +191,19 @@
             <li class="feature-item feature-ice">
               Все наше мороженое изготавливается на собственном производстве, с использованием современного
               оборудования и проверенных временем технологий.</li>
-            <li class="feature-item feature-eco">
-              Для приготовления мороженого используются настоящие сливки и молоко высочайшео качества.Все
-              дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
             <li class="feature-item feature-cow">
               Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми
               нас связывает долговременное сотрудничество.</li>
+            <li class="feature-item feature-eco">Для приготовления мороженого используются настоящие сливки и молоко
+              высочайшео качества.Все
+              дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.
+            </li>
             <li class="feature-item feature-thermometer">
               Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
               мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
           </ul>
         </section>
+
         <div class="info">
           <article class="news">
             <h2>Новое в нашем блоге</h2>
@@ -198,29 +216,32 @@
                 происходит.
                 Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form>
-                <input type="email" id="email-field" name="email" placeholder="Электронная почта">
+                <input type="email" id="email-field" name="email" placeholder="email@example.com" required>
                 <label class="visually-hidden" for="email-field">Электронная почта</label>
                 <button class="btn" type="submit">Отправить</button>
               </form>
             </div>
           </section>
         </div>
+    </div>
 
-        <div class="map">
-          <h2 class="visually-hidden">Карта</h2>
-          <iframe class="embedded-map" src="https://yandex.ru/map-widget/v1/-/CBa8I0FNsB" width="1200" height="430"
-            frameborder="0" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-          <div class="address">
-            <p class="address-info">Адрес главного офиса и офлайн-магазина:<br>
-              <span class="address-text">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
-            <p class="address-contacts"> для заказов по телефону:<br>
-              <a class="address-text" href="tel:88124502525">8 812 450-25-25</a><br>(с 10 до 20 ежедневно)
-            </p>
-            <button class="btn address-button">Форма обратной связи</button>
-          </div>
-        </div>
-      </main>
-      <footer class="page-footer">
+    <div class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <img src="../img/map.png" alt="Карта" width="1200" height="430">
+      <iframe class="embedded-map" src="https://yandex.ru/map-widget/v1/-/CBa8I0FNsB" width="1200" height="430"
+        frameborder="0" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <div class="address">
+        <p class="address-info">Адрес главного офиса и офлайн-магазина:<br>
+          <span class="address-text">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
+        <p class="address-contacts"> для заказов по телефону:<br>
+          <a class="address-text" href="tel:88124502525">8 812 450-25-25</a><br>(с 10 до 20 ежедневно)
+        </p>
+        <button class="btn address-button">Форма обратной связи</button>
+      </div>
+    </div>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
         <ul class="social">
           <li><a class="social-link twitter-icon" href="#"><span class="visually-hidden">Twitter</span></a></li>
           <li><a class="social-link instagram-icon" href="#"><span class="visually-hidden">Instagram</span></a></li>
@@ -238,33 +259,34 @@
           <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
           <p>Сделано в <a class="underline " href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-      <section class="popup subscribe-popup">
-        <h2 class="popup-title">Мы обязательно вам ответим!</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p class="subscribe-popup-form">
-            <input class="popup-field" type="text" id="name-field-main" name="person-name" placeholder="Как вас зовут?"
-              required>
-            <label class="visually-hidden" for="name-field-main">Имя</label>
-          </p>
-          <p class="subscribe-popup-form">
-            <input class="popup-field" type="email" id="email-field-main" name="person-email"
-              placeholder="Ваша почта для ответа" required>
-            <label class="visually-hidden" for="email-field-main">Электронная почта</label>
+    <section class="popup subscribe-popup">
+      <h2 class="popup-title">Мы обязательно вам ответим!</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="subscribe-popup-form">
+          <input class="popup-field" type="text" id="name-field-main" name="person-name" placeholder="Как вас зовут?"
+            required>
+          <label class="visually-hidden" for="name-field-main">Имя</label>
+        </p>
+        <p class="subscribe-popup-form">
+          <input class="popup-field" type="email" id="email-field-main" name="person-email"
+            placeholder="Ваша почта для ответа" required>
+          <label class="visually-hidden" for="email-field-main">Электронная почта</label>
 
-          </p>
-          <p class="subscribe-popup-form popup-add">
-            <textarea class="popup-textarea" name="textarea" id="textarea-field-main"
-              placeholder="Напишите что-нибудь"></textarea>
-            <label class="visually-hidden" for="textarea-field-main">Поле для текста</label>
-          </p>
-          <button class="btn popup-button" type="submit">Отправить</button>
-        </form>
-        <button class="popup-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
-      </section>
+        </p>
+        <p class="subscribe-popup-form popup-add">
+          <textarea class="popup-textarea" name="textarea" id="textarea-field-main"
+            placeholder="Напишите что-нибудь"></textarea>
+          <label class="visually-hidden" for="textarea-field-main">Поле для текста</label>
+        </p>
+        <button class="btn popup-button" type="submit">Отправить</button>
+      </form>
+      <button class="popup-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
 
-    </div>
+
   </div>
   <div class="page-gray-cover"></div>
   <script src="../js/script.js"></script>

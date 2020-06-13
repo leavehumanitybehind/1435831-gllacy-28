@@ -3,9 +3,12 @@ var link = document.querySelector('.address-button');
 var closeButton = document.querySelector('.popup-close-button');
 var login = popup.querySelector('[name="person-name"]');
 var email = popup.querySelector('[name="person-email"]');
-var form = popup.querySelector('form');
+var form = popup.querySelector('.popup-form');
 var grayBg = document.querySelector('.page-gray-cover');
 var storage = localStorage.getItem('name');
+
+var isStorageSupport = true;
+var storage = '';
 
 link.addEventListener('click', function(evt) {
 	evt.preventDefault();
@@ -33,7 +36,9 @@ form.addEventListener('submit', function(evt) {
 		popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add('modal-error');
 	} else {
-		localStorage.setItem('name', login.value);
+		if (isStorageSupport) {
+			localStorage.setItem('name', login.value);
+		}
 	}
 });
 
