@@ -5,12 +5,10 @@ var login = popup.querySelector('[name="person-name"]');
 var email = popup.querySelector('[name="person-email"]');
 var form = popup.querySelector('.popup-form');
 var storage = localStorage.getItem('name');
-
 var isStorageSupport = true;
 var storage = '';
-
-link.addEventListener('click', function(evt) {
-	evt.preventDefault();
+link.addEventListener('click', function(a) {
+	a.preventDefault();
 	popup.classList.add('popup-add');
 	if (storage) {
 		login.value = storage;
@@ -19,16 +17,14 @@ link.addEventListener('click', function(evt) {
 		login.focus();
 	}
 });
-
-closeButton.addEventListener('click', function(evt) {
-	evt.preventDefault();
+closeButton.addEventListener('click', function(a) {
+	a.preventDefault();
 	popup.classList.remove('popup-add');
 	popup.classList.remove('modal-error');
 });
-
-form.addEventListener('submit', function(evt) {
+form.addEventListener('submit', function(a) {
 	if (!login.value || !email.value) {
-		evt.preventDefault();
+		a.preventDefault();
 		popup.classList.remove('modal-error');
 		popup.offsetWidth = popup.offsetWidth;
 		popup.classList.add('modal-error');
@@ -38,9 +34,8 @@ form.addEventListener('submit', function(evt) {
 		}
 	}
 });
-
-window.addEventListener('keydown', function(evt) {
-	if (evt.keyCode === 27) {
+window.addEventListener('keydown', function(a) {
+	if (a.keyCode === 27) {
 		if (popup.classList.contains('popup-add')) {
 			popup.classList.remove('popup-add');
 			popup.classList.remove('modal-error');
