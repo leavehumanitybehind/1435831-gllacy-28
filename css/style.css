@@ -1350,7 +1350,7 @@ ___________________footer_____________________
 	padding: 0;
 	padding-top: 32px;
 
-	width: 330px;
+	width: 338px;
 	height: 37px;
 	list-style: none;
 	font-weight: 400;
@@ -1496,6 +1496,7 @@ li .paginator-active {
 .modal-error {
 	animation-name: shake 0.6s;
 }
+
 @keyframes bounce {
 	0% {
 		transform: translateY(-100px);
@@ -1530,6 +1531,7 @@ li .paginator-active {
 		transform: translateX(10px);
 	}
 }
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
