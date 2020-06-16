@@ -1036,6 +1036,7 @@ fieldset {
 	padding-left: 16px;
 }
 .filter-select {
+	cursor: pointer;
 	margin-right: 15px;
 	-webkit-appearance: none;
 	appearance: none;
@@ -1056,6 +1057,7 @@ fieldset {
 
 	margin-right: 15px;
 	width: 218px;
+	cursor: pointer;
 }
 .price-filter {
 	position: relative;
@@ -1119,6 +1121,7 @@ legend {
 	padding: 12px 13px 8px;
 	background-color: var(--bg-color-hover-);
 	border-radius: 20px;
+	cursor: pointer;
 }
 .fat-filter input {
 	display: none;
@@ -1170,6 +1173,7 @@ legend {
 	border-radius: 20px;
 	margin: 0;
 	padding: 8px 15px;
+	cursor: pointer;
 }
 .topping-filter label {
 	position: relative;
@@ -1215,6 +1219,7 @@ input[type=checkbox]:checked + label::before {
 	border: 2px solid var(--basic-text-color);
 	border-radius: 20px;
 	color: var(--basic-text-color);
+	cursor: pointer;
 }
 .button-filter:hover {
 	background-color: var(--basic-text-color);
@@ -1359,7 +1364,7 @@ ___________________footer_____________________
 	position: relative;
 	text-align: left;
 
-	margin-right: 35px;
+	margin-right: 32px;
 	padding-bottom: 5px;
 }
 
