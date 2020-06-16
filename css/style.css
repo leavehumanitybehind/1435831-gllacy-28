@@ -55,10 +55,7 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-/*
-_______________link__________
-
-}*/
+/*_______________link__________*/
 
 .underline:hover,
 .underline:active,
@@ -132,10 +129,12 @@ ______________grid_____________
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
+
 	margin: 0;
-	padding: 0;
-	list-style: none;
 	margin-right: auto;
+	padding: 0;
+
+	list-style: none;
 }
 .site-navigation-item {
 	margin-top: -8px;
@@ -158,6 +157,7 @@ ______________grid_____________
 	margin-right: 4px;
 	margin-left: 1px;
 	padding: 7px 11px 6px 14px;
+
 	font-weight: 700;
 	color: var(--basic-text-color-hover);
 	border-radius: 26px;
@@ -172,6 +172,7 @@ ______________grid_____________
 	margin-right: 4px;
 	margin-left: 1px;
 	padding: 7px 11px 6px 14px;
+
 	background-color: var(--button-color-active);
 	border: 0;
 	border-radius: 26px;
@@ -252,7 +253,6 @@ ______________grid_____________
 	line-height: 16px;
 
 	position: relative;
-
 	display: block;
 
 	min-height: 17px;
@@ -335,7 +335,6 @@ input[type="search"]:focus,
 textarea:focus {
 	box-shadow: 0 0 0 1px var(--input-active);
 	border-color: var(--input-active);
-	outline: none;
 }
 input:focus::placeholder {
 	font-weight: 700;
@@ -495,7 +494,6 @@ table .basket-item {
 	position: absolute;
 	right: 20px;
 	bottom: 10px;
-	outline: none;
 	border: none;
 	font-size: 18px;
 	font-weight: bold;
@@ -564,9 +562,9 @@ li[class^='slide'] {
 	background-position: 0% 50%;
 }
 
-#button-first:checked ~ .site-wrapper li[class='slide-first'],
-#button-second:checked ~ .site-wrapper li[class='slide-second'],
-#button-third:checked ~ .site-wrapper li[class='slide-third'] {
+.button-first:checked ~ .site-wrapper li[class='slide-first'],
+.button-second:checked ~ .site-wrapper li[class='slide-second'],
+.button-third:checked ~ .site-wrapper li[class='slide-third'] {
 	display: flex;
 }
 
@@ -581,7 +579,7 @@ label[for^='button'] {
 
 	cursor: pointer;
 
-	border: 2px solid #fff;
+	border: 2px solid var(--basic-text-color);
 	border-radius: 50%;
 }
 
@@ -589,38 +587,31 @@ input[id^='button'] {
 	display: none;
 }
 
-.promo-image {
-	transition: opacity 10s ease;
-	opacity: 0;
-}
-
 #button-first:checked ~ .site-wrapper {
-	background-color: #849d8f;
+	background-color: var(--bg-color-main);
 }
 
 #button-second:checked ~ .site-wrapper {
-	background-color: #8996a6;
+	background-color: var(--bg-color-secondary);
 }
 
 #button-third:checked ~ .site-wrapper {
-	background-color: #9d8b84;
+	background-color: var(--bg-color-last);
 }
 
-#button-first:checked ~ .site-wrapper label[for='button-first'],
-#button-second:checked ~ .site-wrapper label[for='button-second'],
-#button-third:checked ~ .site-wrapper label[for='button-third'] {
-	background-color: #fff;
+.button-first:checked ~ .site-wrapper .button-first-label,
+.button-second:checked ~ .site-wrapper .button-second-label,
+.button-third:checked ~ .site-wrapper .button-third-label {
+	background-color: var(--basic-text-color);
 }
 
-#button-first:checked ~ .site-wrapper li[class='slide-first'] .promo-image,
-#button-second:checked ~ .site-wrapper li[class='slide-second'] .promo-image,
-#button-third:checked ~ .site-wrapper li[class='slide-third'] .promo-image {
+.button-first:checked ~ .slide-first .promo-image,
+.button-second:checked ~ .slide-second .promo-image,
+.button-third:checked ~ .slide-third .promo-image {
 	opacity: 1;
 }
 
 .promo-slider-controls {
-	font-size: 0;
-
 	position: absolute;
 	top: 570px;
 }
@@ -667,6 +658,7 @@ input[id^='button'] {
 	margin-bottom: 40px;
 	gap: 26px;
 	padding: 0;
+
 	list-style: none;
 	margin-top: -607px;
 }
@@ -675,6 +667,7 @@ input[id^='button'] {
 	font-weight: bold;
 	font-size: 35px;
 	line-height: 41px;
+
 	padding: 0;
 	margin: 0;
 	margin-bottom: 15px;
@@ -682,14 +675,16 @@ input[id^='button'] {
 .promo-list p {
 	margin: 0;
 	padding: 0;
+	margin-bottom: 40px;
+
 	font-size: 18px;
 	line-height: 22px;
-	margin-bottom: 40px;
 }
 .promo-item-rasberry {
 	position: relative;
 	background: url("../img/rasberry-background.jpg") var(--button-color) no-repeat;
 	border-radius: 16px;
+
 	padding-top: 17px;
 	padding-right: 21px;
 	padding-bottom: 23px;
@@ -700,6 +695,7 @@ input[id^='button'] {
 	position: relative;
 	background: url(../img/chocolate-background.jpg) var(--button-shadow) no-repeat;
 	border-radius: 16px;
+
 	padding-top: 17px;
 	padding-right: 21px;
 	padding-bottom: 23px;
@@ -710,9 +706,10 @@ input[id^='button'] {
 	position: absolute;
 	bottom: 23px;
 	right: 22px;
+	padding: 10px 22px 13px;
+
 	font-size: 18px;
 	line-height: 24px;
-	padding: 10px 22px 13px;
 }
 
 /* ______________________________breadcrumbs
@@ -721,7 +718,9 @@ _______________________*/
 .breadcrumbs {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 224px;
+
 	padding: 0;
 	margin: 0;
 	margin: -24px 0 8px;
@@ -729,6 +728,7 @@ _______________________*/
 
 .breadcrumbs li {
 	list-style: none;
+
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
@@ -781,7 +781,8 @@ _______________________*/
 }
 
 .popular-item::after {
-	background: url("../img/hit.svg");
+	background: url("../img/hit.svg") var(--basic-text-color);
+	border-radius: 50%;
 	content: '';
 	position: absolute;
 	left: 0;
@@ -1199,7 +1200,7 @@ legend {
 input[type=checkbox]:checked + label::before {
 	content: '';
 	position: absolute;
-	left: 0;
+	left: -1px;
 	top: 0;
 	width: 22px;
 	height: 20px;
@@ -1223,7 +1224,6 @@ input[type=checkbox]:checked + label::before {
 	background-color: var(--basic-text-color);
 	color: var(--basic-text-color-hover);
 	box-shadow: inset 0px 2px 1px var(--field-shadow);
-	outline: none;
 }
 
 /*
@@ -1232,8 +1232,7 @@ _____________map____________
 
 .map {
 	position: relative;
-	width: 1200px;
-	height: 430px;
+	right: 20px;
 	margin: 0 auto;
 	border: none;
 }
@@ -1241,7 +1240,7 @@ _____________map____________
 .embedded-map {
 	position: absolute;
 	top: 0;
-	left: 0;
+	left: 0px;
 	width: 1200px;
 	border: none;
 }
@@ -1290,6 +1289,7 @@ ___________________footer_____________________
 	border-top: 1px solid var(--bg-color-hover-);
 	display: flex;
 	justify-content: space-between;
+	padding-top: 18px;
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: normal;
@@ -1306,8 +1306,8 @@ ___________________footer_____________________
 }
 /* footer-icons */
 .social-link {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: flex;
+	flex-wrap: wrap;
 	width: 32px;
 	height: 32px;
 	opacity: .8;
@@ -1343,22 +1343,23 @@ ___________________footer_____________________
 }
 
 .standarts {
-	font-weight: 400;
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
-	margin-left: 20px;
+	margin-left: 32px;
 	padding: 0;
 	padding-top: 32px;
-	flex-wrap: wrap;
-	width: 326px;
+
+	width: 330px;
 	height: 37px;
 	list-style: none;
+	font-weight: 400;
 }
 .standarts li {
 	position: relative;
 	text-align: left;
 
-	margin-right: 20px;
+	margin-right: 35px;
 	padding-bottom: 5px;
 }
 
@@ -1442,10 +1443,7 @@ li .paginator-active {
 	left: 50%;
 
 	margin-left: -239px;
-	padding-top: 15px;
-	padding-right: 25px;
-	padding-bottom: 27px;
-	padding-left: 25px;
+	padding: 15px 25px 27pz;
 }
 
 .popup-field {
