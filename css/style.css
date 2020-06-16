@@ -51,10 +51,6 @@ body {
 a {
 	text-decoration: none;
 }
-img {
-	max-width: 100%;
-	height: auto;
-}
 /*_______________link__________*/
 
 .underline:hover,
@@ -534,8 +530,13 @@ table .basket-item {
 }
 /*  main */
 .slider {
-	position: relative;
-	top: -130px;
+	min-height: 214px;
+	width: 700px;
+	margin: 0 auto;
+	margin-bottom: 32px;
+	padding-top: 319px;
+	padding-bottom: 5px;
+	text-align: center;
 }
 
 .promo-slider {
@@ -545,8 +546,8 @@ table .basket-item {
 	list-style: none;
 }
 
-li[class^='slide'] {
-	position: relative;
+.slides {
+	position: absolute;
 
 	display: none;
 	flex-direction: column;
@@ -559,12 +560,12 @@ li[class^='slide'] {
 .site-wrapper {
 	min-width: 980px;
 	background-repeat: no-repeat;
-	background-position: 0% 50%;
+	background-position: top center;
 }
 
-.button-first:checked ~ .site-wrapper li[class='slide-first'],
-.button-second:checked ~ .site-wrapper li[class='slide-second'],
-.button-third:checked ~ .site-wrapper li[class='slide-third'] {
+.button-first:checked ~ .site-wrapper .slide-first,
+.button-second:checked ~ .site-wrapper .slide-second,
+.button-third:checked ~ .site-wrapper .slide-third {
 	display: flex;
 }
 
@@ -589,14 +590,17 @@ input[id^='button'] {
 
 #button-first:checked ~ .site-wrapper {
 	background-color: var(--bg-color-main);
+	background-image: url("../img/slider-1.png");
 }
 
 #button-second:checked ~ .site-wrapper {
 	background-color: var(--bg-color-secondary);
+	background-image: url("../img/slider-2.png");
 }
 
 #button-third:checked ~ .site-wrapper {
 	background-color: var(--bg-color-last);
+	background-image: url("../img/slider-3.png");
 }
 
 .button-first:checked ~ .site-wrapper .button-first-label,
@@ -613,11 +617,14 @@ input[id^='button'] {
 
 .promo-slider-controls {
 	position: absolute;
+	display: flex;
+	left: 500px;
 	top: 570px;
+	list-style: none;
 }
 .promo-description-wrapper {
-	position: relative;
-	top: -513px;
+	position: absolute;
+	top: 100px;
 
 	display: flex;
 	flex-direction: column;
@@ -660,7 +667,6 @@ input[id^='button'] {
 	padding: 0;
 
 	list-style: none;
-	margin-top: -607px;
 }
 
 .promo-list h3 {
@@ -774,13 +780,13 @@ _______________________*/
 	width: 267px;
 }
 
-.popular-item img,
-.list-item img {
+.item-image {
+	position: relative;
 	border-radius: 50%;
 	z-index: 1;
 }
 
-.popular-item::after {
+.item-image::after {
 	background: url("../img/hit.svg") var(--basic-text-color);
 	border-radius: 50%;
 	content: '';
@@ -789,7 +795,6 @@ _______________________*/
 	top: 0;
 	width: 61px;
 	height: 61px;
-	z-index: 3;
 }
 .list-item h3,
 .popular-item h3 {
@@ -800,6 +805,7 @@ _______________________*/
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
+	z-index: 3;
 }
 .popular-item p,
 .list-item p {
@@ -815,36 +821,38 @@ _______________________*/
 	font-size: 30px;
 	line-height: 35px;
 }
-.icecream-wrapper {
+.popular-item:hover::after,
+.list-item:hover::after {
+	content: '';
 	position: absolute;
 	top: -6px;
-	right: -13px;
-	bottom: -60px;
-	left: -13px;
-	display: none;
+	left: -6px;
+	width: 104%;
+	height: 104%;
+	padding-bottom: 50px;
 	border-radius: 5px;
-	background-color: var(--item-shadow);
-	box-shadow: 0 20px 20px 0 var(--button-background);
-	order: 3;
-	align-self: center;
-	justify-content: center;
+	background: #a9bab0;
+	background-color: rgba(255, 255, 255, .3);
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .1);
+	cursor: pointer;
 }
 .button-list {
 	position: absolute;
-	bottom: 22px;
+	top: 340px;
 	left: 46px;
-	display: inline-block;
+	display: none;
 	margin: 0 auto;
 	padding-top: 9px;
 	padding-right: 17px;
 	padding-bottom: 12px;
 	padding-left: 17px;
-	z-index: 20;
+	z-index: 4;
 }
-.popular-item:hover .icecream-wrapper,
-.list-item:hover .icecream-wrapper {
-	display: flex;
+.popular-item:hover .button-list,
+.list-item:hover .button-list {
+	display: block;
 }
+
 /*___________________________features__________________________
  */
 .features {
@@ -1499,7 +1507,7 @@ li .paginator-active {
 }
 
 .modal-error {
-	animation-name: shake 0.6s;
+	animation: shake 0.6s;
 }
 
 @keyframes bounce {

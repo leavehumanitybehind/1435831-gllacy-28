@@ -544,6 +544,7 @@ input[id^='button'] {
 	opacity: 1;
 }
 .promo-slider-controls {
+	list-style: none;
 	font-size: 0;
 	position: absolute;
 	top: 570px;
