@@ -12,7 +12,7 @@ var storage = '';
 
 link.addEventListener('click', function(evt) {
 	evt.preventDefault();
-	popup.classList.add('popup-add');
+	popup.classList.add('popup-show');
 	if (storage) {
 		login.value = storage;
 		email.focus();
@@ -23,7 +23,7 @@ link.addEventListener('click', function(evt) {
 
 closeButton.addEventListener('click', function(evt) {
 	evt.preventDefault();
-	popup.classList.remove('popup-add');
+	popup.classList.remove('popup-show');
 	popup.classList.remove('modal-error');
 });
 
@@ -42,8 +42,8 @@ form.addEventListener('submit', function(evt) {
 
 window.addEventListener('keydown', function(evt) {
 	if (evt.keyCode === 27) {
-		if (popup.classList.contains('popup-add')) {
-			popup.classList.remove('popup-add');
+		if (popup.classList.contains('popup-show')) {
+			popup.classList.remove('popup-show');
 			popup.classList.remove('modal-error');
 		}
 	}

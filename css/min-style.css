@@ -402,6 +402,14 @@ input::-webkit-input-placeholder {
 .basket-button {
 	position: relative;
 }
+.basket-full-button::after {
+	position: absolute;
+	content: '';
+	top: 25px;
+	right: 10px;
+	width: 80px;
+	height: 100px;
+}
 .table-form {
 	display: none;
 	position: absolute;
@@ -412,7 +420,7 @@ input::-webkit-input-placeholder {
 	background-color: var(--basic-text-color);
 	color: var(--basic-text-color-hover);
 }
-table {
+.basket-table {
 	position: relative;
 	display: flex;
 	justify-content: space-between;
@@ -425,7 +433,7 @@ table {
 	padding-right: 15px;
 	margin-bottom: 85px;
 }
-table .basket-item {
+.basket-table .basket-item {
 	padding-left: 9px;
 	padding-bottom: 20px;
 }
@@ -631,6 +639,7 @@ input[id^='button'] {
 .breadcrumbs {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	width: 224px;
 	padding: 0;
 	margin: 0;
@@ -993,7 +1002,7 @@ legend {
 .fat-filter {
 	font-weight: 400;
 	display: flex;
-	flex: wrap;
+	flex-wrap: wrap;
 	list-style: none;
 	margin: 0;
 	padding: 12px 13px 8px;
@@ -1242,6 +1251,7 @@ input[type=checkbox]:checked + label::before {
 	flex-wrap: wrap;
 	margin: 0;
 	margin-bottom: 30px;
+	width: 194px;
 }
 .paginator a {
 	box-sizing: border-box;

@@ -17,8 +17,11 @@
     <div class="container">
       <header class="page-header">
         <nav class="main-navigation">
-          <img class="main-header-logo" src="./img/logo.svg" width="154" height="64"
-            alt="Логотип магазина мороженого Глейси">
+          <a href="#" class="main-header-logo">
+            <img src="./img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+          </a>
+
+
           <ul class="site-navigation">
             <li class="site-navigation-item submenu-container">
               <a class="underline site-navigation-link" href="catalog.html">Каталог</a>
@@ -27,7 +30,7 @@
                   <a class="submenu-link submenu-link-first">Новинки</a>
                 </li>
                 <li class="submenu-item">
-                  <a class="submenu-link" href="catalog.html">Сливочное</a>
+                  <a class="submenu-link" href="blank.html">Сливочное</a>
                 </li>
                 <li class="submenu-item">
                   <a class="submenu-link submenu-link-active" href="blank.html">Щербеты</a>
@@ -70,10 +73,10 @@
                   <label class="visually-hidden" for="password-form-main">Пароль</label>
                 </p>
                 <button class="btn login-form-button" type="submit">Войти</button>
-                <div class="login-text">
-                  <a class="underline" href="blank.html">Забыли пароль?</a>
-                  <a class="underline" href="blank.html">Новая регистрация</a>
-                </div>
+                <ul class="login-text">
+                  <li><a class="underline" href="blank.html">Забыли пароль?</a></li>
+                  <li><a class="underline" href="blank.html">Новая регистрация</a></li>
+                </ul>
               </form>
             </li>
             <li class="user-navigation-item basket-button">
@@ -184,7 +187,7 @@
         </section>
 
         <section class="features">
-          <h2>Магазин Глэйси - это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес.
+          <h2>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес.
           </h2>
           <ul class="feature-list">
             <li class="feature-item feature-ice">
@@ -194,7 +197,7 @@
               Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми
               нас связывает долговременное сотрудничество.</li>
             <li class="feature-item feature-eco">Для приготовления мороженого используются настоящие сливки и молоко
-              высочайшео качества.Все
+              высочайшего качества.Все
               дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.
             </li>
             <li class="feature-item feature-thermometer">
@@ -231,12 +234,12 @@
           <iframe class="embedded-map" src="https://yandex.ru/map-widget/v1/-/CBa8I0FNsB" width="1200" height="430"
             title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
           <div class="address">
-            <p class="address-info">Адрес главного офиса и офлайн-магазина:<br>
+            <p class="address-info">Адрес главного офиса <br>и офлайн-магазина:<br>
               <span class="address-text">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
             <p class="address-contacts"> для заказов по телефону:<br>
               <a class="address-text" href="tel:88124502525">8 812 450-25-25</a><br>(с 10 до 20 ежедневно)
             </p>
-            <button class="btn address-button">Форма обратной связи</button>
+            <a href="contacts.html" class="btn address-button">Форма обратной связи</a>
           </div>
         </div>
 
@@ -260,7 +263,7 @@
           <li><a class="underline standarts-link" href="blank.html">Экологические стандарты</a></li>
         </ul>
         <div class="copyright">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
+          <img src="./img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
           <p>Сделано в <a class="underline " href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
           </p>
         </div>
@@ -281,7 +284,7 @@
         <label class="visually-hidden" for="email-field-main">Электронная почта</label>
 
       </p>
-      <p class="subscribe-popup-form popup-add">
+      <p class="subscribe-popup-form popup-show">
         <textarea class="popup-textarea" name="textarea" id="textarea-field-main"
           placeholder="Напишите что-нибудь"></textarea>
         <label class="visually-hidden" for="textarea-field-main">Поле для текста</label>
