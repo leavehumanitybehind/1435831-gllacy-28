@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic">
   <link href="./css/normalize.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
+
 </head>
 
 <body class="page-body">
@@ -228,11 +229,8 @@
 
 
 
-        <div class="map">
+        <div class="map" id="map" style="width: 1200px; height: 430px">
           <h2 class="visually-hidden">Карта</h2>
-          <img class="map-img" src="./img/map.png" alt="Карта" width="1200" height="430">
-          <iframe class="embedded-map" src="https://yandex.ru/map-widget/v1/-/CBa8I0FNsB" width="1200" height="430"
-            title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
           <div class="address">
             <p class="address-info">Адрес главного офиса <br>и офлайн-магазина:<br>
               <span class="address-text">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
@@ -295,6 +293,9 @@
   </section>
 
   <script src="./js/script.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=12576af1-5dd4-46e2-90ec-98c87c49775c&lang=ru_RU"
+    type="text/javascript"></script>
+  <script type="text/javascript" src="js/ymaps.js"></script>
 </body>
 
 </html>

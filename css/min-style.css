@@ -1349,7 +1349,7 @@ li .paginator-active {
 	animation-duration: .6s;
 }
 @keyframes bounce {
-	0 {
+	0% {
 		transform: translateY(-100px);
 	}
 	70% {

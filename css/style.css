@@ -585,12 +585,6 @@ input::-webkit-input-placeholder {
 	background-position: top center;
 }
 
-.button-first:checked ~ .site-wrapper .slide-first,
-.button-second:checked ~ .site-wrapper .slide-second,
-.button-third:checked ~ .site-wrapper .slide-third {
-	display: flex;
-}
-
 label[for^='button'] {
 	font-size: 0;
 
@@ -608,6 +602,18 @@ label[for^='button'] {
 
 input[id^='button'] {
 	display: none;
+}
+.promo-slider-controls {
+	position: absolute;
+	display: flex;
+	left: 465px;
+	top: 546px;
+	list-style: none;
+}
+.button-first:checked ~ .site-wrapper .slide-first,
+.button-second:checked ~ .site-wrapper .slide-second,
+.button-third:checked ~ .site-wrapper .slide-third {
+	display: flex;
 }
 
 .button-first:checked ~ .site-wrapper {
@@ -635,14 +641,6 @@ input[id^='button'] {
 .button-second:checked ~ .slide-second .promo-image,
 .button-third:checked ~ .slide-third .promo-image {
 	opacity: 1;
-}
-
-.promo-slider-controls {
-	position: absolute;
-	display: flex;
-	left: 465px;
-	top: 546px;
-	list-style: none;
 }
 
 .promo-description {
@@ -741,7 +739,7 @@ _______________________*/
 
 	padding: 0;
 	margin: 0;
-	margin: -24px 0 8px;
+	margin: -22px 0 8px;
 }
 
 .breadcrumbs li {
@@ -780,7 +778,7 @@ _______________________*/
 	padding: 0;
 }
 .catalog-list {
-	margin-bottom: 50px;
+	margin-bottom: 65px;
 }
 .popular-item,
 .list-item {
@@ -789,6 +787,9 @@ _______________________*/
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 267px;
+}
+.list-item {
+	margin-bottom: -2px;
 }
 
 .item-image {
@@ -811,13 +812,16 @@ _______________________*/
 .list-item h3,
 .popular-item h3 {
 	margin-top: -3px;
-	padding: 0;
+	padding: 0 6px;
 	text-align: center;
 	order: 2;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
 	z-index: 4;
+}
+.list-item h3 {
+	margin-top: -7px;
 }
 .popular-item p,
 .list-item p {
@@ -1036,7 +1040,7 @@ ___________________news______________________
 .filter-container {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 42px;
+	margin-bottom: 40px;
 }
 fieldset {
 	padding: 0;
@@ -1090,14 +1094,14 @@ fieldset {
 	height: 19px;
 	background-color: var(--bg-color-hover-);
 	border-radius: 20px;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 	padding-top: 17px;
 	padding-left: 21px;
 	padding-right: 21px;
 }
 .price-range .price-filter-title {
-	padding-left: 16px;
-	margin-bottom: 7px;
+	padding-left: 15px;
+	margin-bottom: 6px;
 }
 
 .price-filter .scale {
@@ -1135,8 +1139,8 @@ fieldset {
 }
 legend {
 	font-weight: 400;
-	padding-left: 16px;
-	margin-bottom: 7px;
+	padding-left: 14px;
+	margin-bottom: 6px;
 }
 .fat-filter {
 	font-weight: 400;
@@ -1144,7 +1148,7 @@ legend {
 	flex: wrap;
 	list-style: none;
 	margin: 0;
-	padding: 12px 13px 8px;
+	padding: 10px 1px 8px 16px;
 	background-color: var(--bg-color-hover-);
 	border-radius: 20px;
 	cursor: pointer;
@@ -1155,7 +1159,7 @@ legend {
 .fat-filter label {
 	position: relative;
 	margin-right: 21px;
-	padding-left: 29px;
+	padding-left: 31px;
 	font-size: 16px;
 	cursor: pointer;
 }
@@ -1164,16 +1168,16 @@ legend {
 	content: "";
 	position: absolute;
 	left: 5px;
-	top: 3px;
-	width: 11px;
-	height: 11px;
+	top: 4px;
+	width: 8px;
+	height: 8px;
 	background-color: var(--basic-text-color);
 	border-radius: 50%;
 }
 .fat-filter label::after {
 	content: "";
 	position: absolute;
-	left: 0px;
+	left: -2px;
 	top: -2px;
 	width: 15px;
 	height: 15px;
@@ -1198,17 +1202,19 @@ legend {
 	background-color: var(--bg-color-hover-);
 	border-radius: 20px;
 	margin: 0;
-	padding: 8px 15px;
+	padding-top: 8px;
+	padding-left: 15px;
+	padding-right: 3px;
+	padding-bottom: 12px;
 	cursor: pointer;
 }
 .topping-filter label {
 	position: relative;
-	margin-right: 20px;
+	margin-right: 25px;
 	padding-left: 30px;
 	font-size: 16px;
 	font-weight: 400;
 	cursor: pointer;
-	vertical-align: middle;
 }
 .topping-filter input {
 	display: none;
@@ -1216,10 +1222,10 @@ legend {
 .topping-filter label::after {
 	content: "";
 	position: absolute;
-	left: 0px;
-	top: 0;
-	width: 18px;
-	height: 18px;
+	left: -1px;
+	top: 2px;
+	width: 16px;
+	height: 16px;
 	border: 1px solid var(--label-background);
 	border-radius: 3px;
 }
@@ -1230,7 +1236,7 @@ legend {
 input[type=checkbox]:checked + label::before {
 	content: '';
 	position: absolute;
-	left: -1px;
+	left: -2px;
 	top: 0;
 	width: 22px;
 	height: 20px;
@@ -1263,17 +1269,10 @@ _____________map____________
 
 .map {
 	position: relative;
-	right: 20px;
-	margin: 0 auto;
-	border: none;
-}
-
-.embedded-map {
-	position: absolute;
-	top: 0;
-	left: 0px;
-	width: 1200px;
-	border: none;
+	height: 100%;
+	width: 100%;
+	font-size: 0;
+	background: url("../img/map.png") no-repeat 0 0;
 }
 
 .address {
@@ -1288,6 +1287,7 @@ _____________map____________
 	background-color: var(--basic-text-color);
 	border-radius: 16px;
 	padding: 29px 23px;
+	z-index: 1;
 }
 
 .address-info {
@@ -1445,6 +1445,7 @@ ___________________- paginator____________________
 li .paginator-active {
 	color: var(--basic-text-color-hover);
 	background-color: var(--basic-text-color);
+	margin-left: 8px;
 }
 .paginator a:hover:not(.paginator-active) {
 	background-color: var(--bg-color-hover-);
