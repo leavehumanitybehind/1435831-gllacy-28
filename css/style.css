@@ -1504,7 +1504,7 @@ input[type=checkbox]:checked + label:before {
 	z-index: 1;
 	position: absolute;
 	top: 63px;
-	right: 1px;
+	right: 31px;
 
 	width: 263px;
 	padding: 29px 19px 38px;
