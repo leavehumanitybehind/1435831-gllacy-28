@@ -55,7 +55,7 @@ body {
 a {
 	text-decoration: none;
 }
-/*_______________link__________*/
+/*__________________________link_______________________*/
 
 .underline:hover,
 .underline:active,
@@ -71,7 +71,7 @@ a {
 
 	border-bottom: 1px solid var(--bg-color-hover-);
 }
-/* button`s condition */
+/*___________________________ button`s condition______________________________ */
 .btn {
 	color: var(--basic-text-color);
 
@@ -100,9 +100,6 @@ a {
 	background: var(--button-background);
 	border-radius: 50px;
 }
-/*
-______________grid_____________
- */
 
 .page-body {
 	display: grid;
@@ -113,7 +110,7 @@ ______________grid_____________
 	margin: 0 auto;
 	padding: 0px 27px;
 }
-/*header grid*/
+/*_______________________________________header grid_________________________________*/
 .page-header {
 	z-index: 1;
 
@@ -124,12 +121,12 @@ ______________grid_____________
 	justify-content: space-between;
 	align-items: center;
 }
-/* logo in header */
+/* _______________________________logo in header___________________________ */
 .main-header-logo {
 	display: flex;
 	margin-right: 9px;
 }
-/*.site-navigation*/
+/*________________________________.site-navigation________________________________*/
 .site-navigation {
 	display: flex;
 	flex-wrap: wrap;
@@ -184,7 +181,7 @@ ______________grid_____________
 .site-navigation-link--active:hover {
 	color: var(--basic-text-color-hover);
 }
-/*  submenu*/
+/* _______________________ submenu___________________________*/
 
 .submenu-container {
 	position: relative;
@@ -224,7 +221,7 @@ ______________grid_____________
 	display: block;
 }
 
-/* submenu link styles */
+/* ______________________________submenu link styles______________________________ */
 
 .submenu-item .submenu-link-first {
 	margin-top: 8px;
@@ -242,7 +239,7 @@ ______________grid_____________
 .submenu-item .submenu-link-active {
 	background: var(--button-color-active);
 }
-/* user-navigation */
+/* ______________________user-navigation___________________________ */
 .user-navigation {
 	display: flex;
 	margin: 0;
@@ -285,7 +282,7 @@ ______________grid_____________
 	width: 17px;
 	height: 17px;
 
-	background-image: url(../img/loupe.svg);
+	background-image: url("../img/loupe.svg");
 }
 .navigation-button-search:hover::before {
 	position: absolute;
@@ -296,11 +293,11 @@ ______________grid_____________
 	width: 17px;
 	height: 17px;
 
-	background-image: url(../img/loupe-black.svg);
+	background-image: url("../img/loupe-black.svg");
 
 	cursor: pointer;
 }
-/*search-form */
+/*__________________________search-form_____________________________ */
 .search-button {
 	position: relative;
 }
@@ -339,34 +336,7 @@ ______________grid_____________
 	border: 1px solid var(--input-hover);
 	border-radius: 5px;
 }
-/* input conditions */
-input[type="text"]:hover,
-input[type="email"]:hover,
-input[type="password"]:hover,
-input[type="search"]:hover,
-textarea:hover {
-	box-shadow: 0 0 0 1px var(--input-shadow);
-	border-color: var(--input-shadow);
-}
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="search"]:focus,
-textarea:focus {
-	box-shadow: 0 0 0 1px var(--input-active);
-	border-color: var(--input-active);
-}
-input:focus::placeholder {
-	font-weight: 700;
-	color: var(--basic-text-color-hover);
-}
-input::-webkit-input-placeholder {
-	color: var(--basic-text-color-hover);
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 24px;
-}
 .navigation-button-login {
 	padding-left: 41px;
 }
@@ -380,14 +350,14 @@ input::-webkit-input-placeholder {
 	width: 21px;
 	height: 19px;
 
-	background: url(../img/entrance.svg);
+	background: url("../img/entrance.svg");
 }
 
 .navigation-button-login:hover::before {
-	background: url(../img/entrance-black.svg);
+	background: url("../img/entrance-black.svg");
 	color: var(--basic-text-color-hover);
 }
-/*login form  */
+/*_________________________login form_________________________________  */
 .login-button {
 	position: relative;
 
@@ -477,12 +447,12 @@ input::-webkit-input-placeholder {
 	width: 21px;
 	height: 20px;
 
-	background: url(../img/basket.svg);
+	background: url("../img/basket.svg");
 }
 .navigation-button-basket:hover::before {
-	background: url(../img/basket-red.svg);
+	background: url("../img/basket-red.svg");
 }
-/*basket table */
+/*_______________________basket table__________________________ */
 .basket-full-button:hover .table-form {
 	z-index: 1;
 	display: block;
@@ -541,7 +511,7 @@ input::-webkit-input-placeholder {
 
 	background-color: inherit;
 	border: 0;
-	background-image: url(../img/cross-small.svg);
+	background-image: url("../img/cross-small.svg");
 }
 .basket-item .basket-price {
 	color: var(--decoration-elements);
@@ -572,7 +542,35 @@ input::-webkit-input-placeholder {
 	font-weight: 700;
 	font-size: 15px;
 }
-/*____contacts_________*/
+/*_______________________ input conditions_________________________ */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+textarea:hover {
+	box-shadow: 0 0 0 1px var(--input-shadow);
+	border-color: var(--input-shadow);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+	box-shadow: 0 0 0 1px var(--input-active);
+	border-color: var(--input-active);
+}
+input:focus::placeholder {
+	font-weight: 700;
+	color: var(--basic-text-color-hover);
+}
+input::-webkit-input-placeholder {
+	color: var(--basic-text-color-hover);
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+/*_______________________________contacts_____________________________________*/
 
 .contacts {
 	display: flex;
@@ -593,7 +591,7 @@ input::-webkit-input-placeholder {
 	font-size: 22px;
 	color: var(--basic-text-color);
 }
-/*  main */
+/*__________________________________slider_________________________________ */
 .slider {
 	min-height: 168px;
 	width: 700px;
@@ -650,8 +648,9 @@ input::-webkit-input-placeholder {
 }
 .promo-slider-controls {
 	position: absolute;
-	left: 465px;
 	top: 546px;
+
+	margin-left: -262px;
 
 	display: flex;
 
@@ -665,17 +664,17 @@ input::-webkit-input-placeholder {
 
 .button-first:checked ~ .site-wrapper {
 	background-color: var(--bg-color-main);
-	background-image: url(../img/slider-1.png);
+	background-image: url("../img/slider-1.png");
 }
 
 .button-second:checked ~ .site-wrapper {
 	background-color: var(--bg-color-secondary);
-	background-image: url(../img/slider-2.png);
+	background-image: url("../img/slider-2.png");
 }
 
 .button-third:checked ~ .site-wrapper {
 	background-color: var(--bg-color-last);
-	background-image: url(../img/slider-3.png);
+	background-image: url("../img/slider-3.png");
 }
 
 .button-first:checked ~ .site-wrapper .button-first-label,
@@ -709,7 +708,7 @@ input::-webkit-input-placeholder {
 	text-shadow: 0 2px 5px var(--button-hover-shadow);
 }
 
-/* promo */
+/* _________________________promo_________________________ */
 .promo-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -746,7 +745,7 @@ input::-webkit-input-placeholder {
 	padding-left: 17px;
 	min-height: 189px;
 
-	background: url(../img/rasberry-background.jpg) var(--button-color) no-repeat;
+	background: url("../img/rasberry-background.jpg") var(--button-color) no-repeat;
 	border-radius: 16px;
 }
 .promo-item-chocolate {
@@ -758,7 +757,7 @@ input::-webkit-input-placeholder {
 	padding-left: 17px;
 	min-height: 189px;
 
-	background: url(../img/chocolate-background.jpg) var(--button-shadow) no-repeat;
+	background: url("../img/chocolate-background.jpg") var(--button-shadow) no-repeat;
 	border-radius: 16px;
 }
 .promo-list a {
@@ -772,8 +771,7 @@ input::-webkit-input-placeholder {
 	line-height: 24px;
 }
 
-/* ______________________________breadcrumbs
-_______________________*/
+/* ______________________________breadcrumbs_______________________*/
 
 .breadcrumbs {
 	display: flex;
@@ -807,7 +805,7 @@ _______________________*/
 	color: var(--basic-text-color);
 }
 
-/*______popular + catalog ____________*/
+/*________________________popular + catalog _______________________*/
 .popular {
 	margin-bottom: 28px;
 }
@@ -857,7 +855,7 @@ _______________________*/
 	width: 61px;
 	height: 61px;
 
-	background: url(../img/hit.svg) var(--basic-text-color);
+	background: url("../img/hit.svg") var(--basic-text-color);
 	border-radius: 50%;
 }
 .list-item h3,
@@ -923,8 +921,7 @@ _______________________*/
 	display: block;
 }
 
-/*___________________________features__________________________
- */
+/*___________________________features__________________________*/
 .features {
 	padding: 21px 21px 2px;
 	margin-bottom: 42px;
@@ -1014,9 +1011,7 @@ _______________________*/
 	background: url("../img/thermometer.svg");
 }
 
-/*
-___________________news______________________
- */
+/*_____________________news______________________*/
 
 .info {
 	display: grid;
@@ -1031,7 +1026,7 @@ ___________________news______________________
 
 	color: var(--basic-text-color-hover);
 
-	background: url(../img/strawberry-background.jpg) var(--basic-color-bg) no-repeat;
+	background: url("../img/strawberry-background.jpg") var(--basic-color-bg) no-repeat;
 	border-radius: 16px;
 }
 
@@ -1058,7 +1053,7 @@ ___________________news______________________
 	border: 0;
 }
 
-/*subscription */
+/*___________________________subscription_______________________________ */
 
 .subscription {
 	width: 549px;
@@ -1112,7 +1107,7 @@ ___________________news______________________
 	font-size: 18px;
 	line-height: 24px;
 }
-/*filters */
+/*____________________filters_____________________ */
 .catalog-title {
 	margin: 0 0 31px;
 
@@ -1125,7 +1120,7 @@ ___________________news______________________
 	flex-wrap: wrap;
 	margin-bottom: 40px;
 }
-fieldset {
+.filter-container fieldset {
 	padding: 0;
 	margin: 0;
 
@@ -1271,7 +1266,7 @@ legend {
 .fat-filter input:checked + label::before {
 	position: absolute;
 	content: "";
-	left: 5px;
+	left: 4px;
 	top: 4px;
 
 	width: 8px;
@@ -1334,33 +1329,33 @@ legend {
 .topping-filter label::after {
 	position: absolute;
 	content: "";
-	left: -1px;
-	top: 2px;
+	left: -9px;
+	top: 0px;
 
-	width: 16px;
-	height: 16px;
+	width: 22px;
+	height: 22px;
 
-	border: 1px solid var(--label-background);
+	background: url("../img/checkbox-off.svg");
 	border-radius: 3px;
 }
 .topping-filter label:hover::after {
-	border: 2px solid var(--basic-text-color);
+	box-shadow: 0 0 0 1px var(--basic-text-color);
 }
 
 input[type=checkbox]:checked + label::before {
 	position: absolute;
 	content: '';
-	left: -2px;
+	left: -9px;
 	top: 0;
 
 	width: 22px;
 	height: 20px;
 
 	background-color: inherit;
-	background: url(../img/checkbox-on.svg) no-repeat;
+	background: url("../img/checkbox-on.svg") no-repeat;
 }
 .button-filter {
-	margin: 24px 0 0 11px;
+	margin: 24px 0 4px 7px;
 	padding: 5px 26px 5px 28px;
 
 	font-weight: 500;
@@ -1384,9 +1379,7 @@ input[type=checkbox]:checked + label::before {
 	box-shadow: inset 0px 2px 1px var(--field-shadow);
 }
 
-/*
-_____________map____________
-*/
+/*______________________________map________________________*/
 
 .map {
 	position: relative;
@@ -1403,7 +1396,7 @@ _____________map____________
 	z-index: 1;
 	position: absolute;
 	top: 63px;
-	right: 51px;
+	right: 1px;
 
 	width: 263px;
 	padding: 29px 19px 38px;
@@ -1444,9 +1437,7 @@ _____________map____________
 	color: var(--basic-text-color-hover);
 }
 
-/*
-___________________footer_____________________
- */
+/*___________________footer_____________________*/
 
 .page-footer .container {
 	display: flex;
@@ -1463,7 +1454,7 @@ ___________________footer_____________________
 .social {
 	display: flex;
 	flex-wrap: wrap;
-	width: 175px;
+	width: 185px;
 	padding: 0;
 
 	list-style: none;
@@ -1514,9 +1505,9 @@ ___________________footer_____________________
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0;
-	margin-left: 49px;
+	margin-left: 44px;
 	padding: 0;
-	padding-top: 10px;
+	padding-top: 15px;
 	width: 338px;
 	height: 37px;
 
@@ -1543,7 +1534,7 @@ ___________________footer_____________________
 
 	background: url("../img/heart.svg");
 }
-/* copyright */
+/*____________________ copyright___________________ */
 .copyright {
 	width: 190px;
 }
@@ -1553,9 +1544,7 @@ ___________________footer_____________________
 
 	font-size: 12px;
 }
-/*
-___________________- paginator____________________
- */
+/*___________________paginator____________________*/
 
 .paginator {
 	display: flex;
@@ -1572,7 +1561,7 @@ ___________________- paginator____________________
 	width: 26px;
 	height: 26px;
 	margin-right: 2px;
-	padding-top: 4px;
+	padding-top: 1px;
 
 	text-align: center;
 	font-size: 16px;
@@ -1598,12 +1587,12 @@ li .paginator-active {
 	background-color: var(--basic-text-color);
 }
 .paginator-next {
-	background: url(../img/icon-right-small.svg) no-repeat 50% 50%;
+	background: url("../img/icon-right-small.svg") no-repeat 50% 50%;
 }
 .paginator-back {
-	background: url(../img/icon-left-small.svg) no-repeat 50% 50%;
+	background: url("../img/icon-left-small.svg") no-repeat 50% 50%;
 }
-/* subscribe-popup */
+/*________________________ subscribe-popup_____________________________ */
 .popup-title {
 	color: var(--basic-text-color-hover);
 }
