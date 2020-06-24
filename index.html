@@ -18,23 +18,23 @@
     <div class="container">
       <header class="page-header">
         <nav class="main-navigation">
-          <a href="#" class="main-header-logo">
+          <a class="main-header-logo">
             <img src="./img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
           </a>
 
 
           <ul class="site-navigation">
             <li class="site-navigation-item submenu-container">
-              <a class="underline site-navigation-link" href="catalog.html">Каталог</a>
+              <a class="underline site-navigation-link" href="catalog.html"> Каталог</a>
               <ul class="submenu">
                 <li class="submenu-item">
                   <a class="submenu-link submenu-link-first">Новинки</a>
                 </li>
                 <li class="submenu-item">
-                  <a class="submenu-link" href="blank.html">Сливочное</a>
+                  <a class="submenu-link" href="catalog.html">Сливочное</a>
                 </li>
                 <li class="submenu-item">
-                  <a class="submenu-link submenu-link-active" href="blank.html">Щербеты</a>
+                  <a class="submenu-link" href="blank.html">Щербеты</a>
                 </li>
                 <li class="submenu-item">
                   <a class="submenu-link" href="blank.html">Фруктовый лед</a>
@@ -62,7 +62,7 @@
               </form>
             </li>
             <li class="user-navigation-item login-button">
-              <a class="user-navigation-button  navigation-button-login">Вход</a>
+              <span class="user-navigation-button  navigation-button-login">Вход</span>
 
               <form class="login-field" action="https://echo.htmlacademy.ru" method="post">
                 <p>
@@ -81,7 +81,7 @@
               </form>
             </li>
             <li class="user-navigation-item basket-button">
-              <a class="user-navigation-button  navigation-button-basket">Пусто</a>
+              <span class="user-navigation-button  navigation-button-basket">Пусто</span>
             </li>
           </ul>
         </nav>
@@ -113,9 +113,12 @@
             </li>
           </ul>
           <ul class="promo-slider-controls">
-            <li><label class="button-first-label" for="button-first"></label></li>
-            <li><label class="button-second-label" for="button-second"></label></li>
-            <li><label class="button-third-label" for="button-third"></label></li>
+            <li><label class="button-first-label" for="button-first"><span class=" visually-hidden">Первая
+                  кнопка</span></label></li>
+            <li><label class="button-second-label" for="button-second"><span class=" visually-hidden">Вторая
+                  кнопка</span></label></li>
+            <li><label class="button-third-label" for="button-third"><span class=" visually-hidden">Третья
+                  кнопка</span></label></li>
           </ul>
         </section>
         <section class="promo">
@@ -226,45 +229,43 @@
             </div>
           </section>
         </div>
-
-
-
-        <div class="map" id="map">
-          <h2 class="visually-hidden">Карта</h2>
-          <div class="address">
-            <p class="address-info">Адрес главного офиса <br>и офлайн-магазина:<br>
-              <span class="address-text">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
-            <p class="address-contacts"> для заказов по телефону:<br>
-              <a class="address-text" href="tel:88124502525">8 812 450-25-25</a><br>(с 10 до 20 ежедневно)
-            </p>
-            <a href="contacts.html" class="btn address-button">Форма обратной связи</a>
-          </div>
-        </div>
-
-      </main>
     </div>
+
+
+
+    <section class="map" id="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="address">
+        <p class="address-info">Адрес главного офиса <br>и офлайн-магазина:<br>
+          <span class="address-text">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
+        <p class="address-contacts"> для заказов по телефону:<br>
+          <a class="address-text" href="tel:88124502525">8 812 450-25-25</a><br>(с 10 до 20 ежедневно)
+        </p>
+        <a href="contacts.html" class="btn address-button">Форма обратной связи</a>
+      </div>
+    </section>
+
+    </main>
     <footer class="page-footer">
-      <div class="container">
-        <ul class="social">
-          <li><a class="social-link twitter-icon" href="blank.html"><span class="visually-hidden">Twitter</span></a>
-          </li>
-          <li><a class="social-link instagram-icon" href="blank.html"><span class="visually-hidden">Instagram</span></a>
-          </li>
-          <li><a class="social-link fb-icon" href="blank.html"><span class="visually-hidden">FaceBook</span></a></li>
-          <li><a class="social-link vk-icon" href="blank.html"><span class="visually-hidden">VK</span></a></li>
-        </ul>
-        <ul class="standarts">
-          <li class="standarts-link-important"><a class="underline standarts-link " href="blank.html">Для
-              поставщиков</a></li>
-          <li><a class="underline standarts-link" href="blank.html">Наши документы</a></li>
-          <li><a class="underline standarts-link" href="blank.html">О производстве</a></li>
-          <li><a class="underline standarts-link" href="blank.html">Экологические стандарты</a></li>
-        </ul>
-        <div class="copyright">
-          <img src="./img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
-          <p>Сделано в <a class="underline " href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
-          </p>
-        </div>
+      <ul class="social">
+        <li><a class="social-link twitter-icon" href="blank.html"><span class="visually-hidden">Twitter</span></a>
+        </li>
+        <li><a class="social-link instagram-icon" href="blank.html"><span class="visually-hidden">Instagram</span></a>
+        </li>
+        <li><a class="social-link fb-icon" href="blank.html"><span class="visually-hidden">FaceBook</span></a></li>
+        <li><a class="social-link vk-icon" href="blank.html"><span class="visually-hidden">VK</span></a></li>
+      </ul>
+      <ul class="standarts">
+        <li class="standarts-link-important"><a class="underline standarts-link " href="blank.html">Для
+            поставщиков</a></li>
+        <li><a class="underline standarts-link" href="blank.html">Наши документы</a></li>
+        <li><a class="underline standarts-link" href="blank.html">О производстве</a></li>
+        <li><a class="underline standarts-link" href="blank.html">Экологические стандарты</a></li>
+      </ul>
+      <div class="copyright">
+        <img src="./img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип академии">
+        <p>Сделано в <a class="underline " href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017
+        </p>
       </div>
     </footer>
   </div>
@@ -293,9 +294,8 @@
   </section>
 
   <script src="./js/script.js"></script>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=12576af1-5dd4-46e2-90ec-98c87c49775c&lang=ru_RU"
-    type="text/javascript"></script>
-  <script type="text/javascript" src="js/ymaps.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=12576af1-5dd4-46e2-90ec-98c87c49775c&lang=ru_RU"></script>
+  <script src="./js/ymaps.js"></script>
 </body>
 
 </html>
