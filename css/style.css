@@ -961,7 +961,7 @@ input:focus:-ms-input-placeholder {
 
 /*________________________popular + catalog _______________________*/
 .popular {
-	margin-bottom: 28px;
+	margin-bottom: 25px;
 }
 
 .popular-list,
@@ -1095,7 +1095,7 @@ input:focus:-ms-input-placeholder {
 
 /*___________________________features__________________________*/
 .features {
-	padding: 21px 21px 2px;
+	padding: 23px 21px 6px;
 	margin-bottom: 42px;
 
 	color: var(--basic-text-color-hover);
@@ -1131,7 +1131,7 @@ input:focus:-ms-input-placeholder {
 .feature-item {
 	position: relative;
 
-	margin-bottom: 21px;
+	margin-bottom: 19px;
 	padding-left: 54px;
 	width: 485px;
 
@@ -1201,7 +1201,7 @@ input:focus:-ms-input-placeholder {
 .news {
 	width: 540px;
 	min-height: 198px;
-	padding: 21px 0px 0px 20px;
+	padding: 17px 0px 0px 20px;
 
 	color: var(--basic-text-color-hover);
 
@@ -1238,7 +1238,7 @@ input:focus:-ms-input-placeholder {
 
 .subscription {
 	width: 549px;
-	padding: 6px 5px 5px 6px;
+	padding: 3px 5px 5px 6px;
 
 	border-radius: 16px;
 	background: url("../img/bg-post.svg");
@@ -1598,7 +1598,7 @@ input[type=checkbox]:checked + label:before {
 	right: 232px;
 
 	width: 263px;
-	padding: 29px 19px 38px;
+	padding: 32px 19px 38px;
 
 	color: var(--basic-text-color-hover);
 	font-weight: normal;
@@ -1776,8 +1776,8 @@ input[type=checkbox]:checked + label:before {
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin: 0;
-	margin-bottom: 32px;
-	padding-top: 4px;
+	margin-bottom: 31px;
+	padding-top: 5px;
 
 	list-style: none;
 }
@@ -1786,7 +1786,7 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	width: 26px;
 	height: 26px;
-	margin-right: 2px;
+	margin-right: 3px;
 	padding-top: 3px;
 
 	text-align: center;
