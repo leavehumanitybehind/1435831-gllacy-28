@@ -15,83 +15,80 @@
   <input type="radio" class="slider-button button-second" id="button-second" name="promo-slider-toggle">
   <input type="radio" class="slider-button button-third" id="button-third" name="promo-slider-toggle">
   <div class="site-wrapper">
-    <div class="container">
-      <header class="page-header">
-        <nav class="main-navigation">
-          <a class="main-header-logo">
-            <img src="./img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
-          </a>
+    <header class="page-header container">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="./img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+        </a>
 
 
-          <ul class="site-navigation">
-            <li class="site-navigation-item submenu-container">
-              <a class="underline site-navigation-link" href="blank.html"> Каталог</a>
-              <ul class="submenu">
-                <li class="submenu-item">
-                  <a class="submenu-link submenu-link-first">Новинки</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="catalog.html">Сливочное</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="blank.html">Щербеты</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="blank.html">Фруктовый лед</a>
-                </li>
-                <li class="submenu-item">
-                  <a class="submenu-link" href="blank.html">Мелорин</a>
-                </li>
+        <ul class="site-navigation">
+          <li class="site-navigation-item submenu-container">
+            <a class="site-navigation-link" href="blank.html"> Каталог</a>
+            <ul class="submenu">
+              <li class="submenu-item">
+                <a class="submenu-link submenu-link-first">Новинки</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="catalog.html">Сливочное</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="blank.html">Щербеты</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="blank.html">Фруктовый лед</a>
+              </li>
+              <li class="submenu-item">
+                <a class="submenu-link" href="blank.html">Мелорин</a>
+              </li>
+            </ul>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="blank.html">Доставка и оплата</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class=" site-navigation-link" href="blank.html">О компании</a>
+          </li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="user-navigation-item search-button">
+            <span class="user-navigation-button  navigation-button-search"></span>
+            <span class="visually-hidden">Поиск</span>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" id="search-field" placeholder="Крем-брюле">
+              <label class="visually-hidden" for="search-field">Поле поиска</label>
+              <button class="visually-hidden" type="submit">Отправить</button>
+            </form>
+          </li>
+          <li class="user-navigation-item login-button">
+            <span class="user-navigation-button  navigation-button-login">Вход</span>
+
+            <form class="login-field" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <input type="email" id="login-form" placeholder="Электронная почта" required>
+                <label class="visually-hidden" for="login-form">email@example.com</label>
+              </p>
+              <p>
+                <input type="password" id="password-form-main" placeholder="Пароль" required>
+                <label class="visually-hidden" for="password-form-main">******</label>
+              </p>
+              <button class="btn login-form-button" type="submit">Войти</button>
+              <ul class="login-text">
+                <li><a class="underline" href="blank.html">Забыли пароль?</a></li>
+                <li><a class="underline" href="blank.html">Новая регистрация</a></li>
               </ul>
-            </li>
-            <li class="site-navigation-item">
-              <a class="underline site-navigation-link" href="blank.html">Доставка и оплата</a>
-            </li>
-            <li class="site-navigation-item">
-              <a class="underline   site-navigation-link" href="blank.html">О компании</a>
-            </li>
-          </ul>
-          <ul class="user-navigation">
-            <li class="user-navigation-item search-button">
-              <a class="user-navigation-button  navigation-button-search"></a>
-              <span class="visually-hidden">Поиск</span>
-              <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-                <input type="search" id="search-field" placeholder="Крем-брюле">
-                <label class="visually-hidden" for="search-field">Поле поиска</label>
-                <button class="visually-hidden" type="submit">Отправить</button>
-              </form>
-            </li>
-            <li class="user-navigation-item login-button">
-              <span class="user-navigation-button  navigation-button-login">Вход</span>
-
-              <form class="login-field" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <input type="email" id="login-form" placeholder="Электронная почта" required>
-                  <label class="visually-hidden" for="login-form">Электронная почта</label>
-                </p>
-                <p>
-                  <input type="password" id="password-form-main" placeholder="Пароль" required>
-                  <label class="visually-hidden" for="password-form-main">Пароль</label>
-                </p>
-                <button class="btn login-form-button" type="submit">Войти</button>
-                <ul class="login-text">
-                  <li><a class="underline" href="blank.html">Забыли пароль?</a></li>
-                  <li><a class="underline" href="blank.html">Новая регистрация</a></li>
-                </ul>
-              </form>
-            </li>
-            <li class="user-navigation-item basket-button">
-              <span class="user-navigation-button  navigation-button-basket">Пусто</span>
-            </li>
-          </ul>
-        </nav>
-        <div class="contacts">
-          <p class="contacts-shedule">с 10 до 20, ежедневно</p>
-          <a class="contacts-link" href="tel:88124502525">8 812 450-25-25</a>
-        </div>
-      </header>
-    </div>
-
+            </form>
+          </li>
+          <li class="user-navigation-item basket-button">
+            <span class="user-navigation-button  navigation-button-basket">Пусто</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="contacts">
+        <p class="contacts-shedule">с 10 до 20, ежедневно</p>
+        <a class="contacts-link" href="tel:88124502525">8 812 450-25-25</a>
+      </div>
+    </header>
     <main>
       <div class="container">
         <h1 class="visually-hidden">Главная страница</h1>
@@ -215,7 +212,7 @@
         <div class="info">
           <article class="news">
             <h2>Новое в нашем блоге</h2>
-            <a class="news-link">10 способов сервировки фруктовых щербетов к столу</a>
+            <a href="blank.html" class="news-link">10 способов сервировки фруктовых щербетов к столу</a>
           </article>
           <section class="subscription">
             <div class="subscription-container">
@@ -293,7 +290,7 @@
     <button class="popup-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
 
-  <script src="/js/script.min.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 
 </html>

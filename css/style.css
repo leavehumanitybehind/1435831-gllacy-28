@@ -185,6 +185,7 @@ a {
 	color: var(--basic-text-color-hover);
 
 	border-radius: 26px;
+	border-bottom: none;
 	background: var(--basic-text-color);
 }
 .site-navigation-link:active {
@@ -1392,8 +1393,8 @@ input:focus:-ms-input-placeholder {
 	position: absolute;
 	top: 6px;
 
-	width: 2px;
-	height: 2px;
+	width: 4px;
+	height: 4px;
 	padding: 0;
 
 	border: 10px solid var(--basic-text-color);
@@ -1479,11 +1480,11 @@ input:focus:-ms-input-placeholder {
 	border-radius: 50%;
 }
 .fat-filter input:checked:hover + label:hover:before {
-	left: 3px;
-	top: 3px;
+	left: 5px;
+	top: 5px;
 
-	width: 12px;
-	height: 12px;
+	width: 8px;
+	height: 8px;
 
 	background: var(--basic-text-color);
 }
@@ -1527,7 +1528,7 @@ input:focus:-ms-input-placeholder {
 	left: -9px;
 	top: 0px;
 
-	width: 20px;
+	width: 30px;
 	height: 18px;
 
 	border: 2px solid var(--label-background);
@@ -1546,7 +1547,7 @@ input[type=checkbox]:checked + label:before {
 	top: 0;
 
 	width: 30px;
-	height: 22px;
+	height: 18px;
 
 	background-color: inherit;
 	background: url("../img/checkbox-on.svg") no-repeat;
