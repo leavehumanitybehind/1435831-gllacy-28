@@ -31,7 +31,7 @@
 	--disabled-color: rgba(255, 255, 255, 0.4);
 	--icon-border-active: rgba(255, 255, 255, .7);
 	--decoration-elements: #ababab;
-	--placeholder-color: #999999;
+	--placeholder-color: #999;
 	--box-shadow: rgba(0, 0, 0, .4);
 	--item-box-shadow: rgba(0, 0, 0, .2);
 	--item-shadow: rgba(248, 247, 244, .2);
@@ -56,7 +56,6 @@ a {
 	color: var(--link-color);
 	border-bottom: 1px solid var(--link-border-hover);
 }
-
 .underline {
 	color: var(--basic-text-color);
 	border-bottom: 1px solid var(--bg-color-hover-);
@@ -100,7 +99,7 @@ a {
 }
 .page-header {
 	z-index: 1;
-	padding-top: 8px;
+	padding-top: 10px;
 }
 .main-navigation {
 	display: -webkit-box;
@@ -145,7 +144,6 @@ a {
 	color: var(--basic-text-color);
 	font-size: 16px;
 	line-height: 18px;
-
 	border-bottom: 1px solid var(--bg-color-hover-);
 }
 .site-navigation-item:hover .site-navigation-link,
@@ -240,11 +238,9 @@ a {
 }
 .user-navigation-button {
 	position: relative;
-
 	display: block;
 	min-height: 17px;
 	padding: 9px 15px 7px 18px;
-
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 16px;
@@ -377,12 +373,10 @@ a {
 	margin-right: 24px;
 	margin-bottom: 26px;
 	padding: 16px 30px;
-
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 16px;
-
 	border-radius: 26px;
 }
 .login-text {
@@ -395,7 +389,6 @@ a {
 	width: 140px;
 	margin: 0;
 	padding: 0;
-
 	list-style: none;
 }
 .login-text a {
@@ -455,6 +448,7 @@ a {
 	top: 40px;
 	right: 0;
 	display: none;
+	height: 242px;
 	min-width: 570px;
 	color: var(--basic-text-color-hover);
 	border-radius: 5px;
@@ -469,10 +463,9 @@ a {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	padding-top: 19px;
+	padding-top: 14px;
 	padding-left: 17px;
 	padding-right: 15px;
-	margin-bottom: 96px;
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 16px;
@@ -481,26 +474,25 @@ a {
 }
 .basket-table td {
 	min-height: 40px;
-	padding-top: 10px;
+	padding-top: 18px;
 	vertical-align: top;
 }
 .basket-item-image {
-	padding-top: 1px;
 	padding-left: 12px;
 	padding-right: 12px;
-	padding-bottom: 22px;
 }
 .basket-table .basket-item-title {
+	padding-top: 19px;
 	padding-left: 4px;
-	padding-bottom: 21px;
+	padding-bottom: 18px;
 	max-width: 223px;
 	padding-right: 19px;
 }
-
 .basket-item .basket-full-delete {
 	width: 11px;
 	height: 11px;
 	padding: 0;
+	padding-bottom: 11px;
 	vertical-align: center;
 	background-color: inherit;
 	border: 0;
@@ -509,8 +501,8 @@ a {
 }
 .basket-item-price,
 .basket-item-amount {
-	padding-left: 17px;
-	padding-right: 18px;
+	padding-left: 14px;
+	padding-right: 19px;
 	text-align: center;
 }
 .basket-item .basket-price {
@@ -518,8 +510,8 @@ a {
 }
 .basket-button-link {
 	position: absolute;
-	right: 20px;
-	bottom: 20px;
+	right: 18px;
+	bottom: 10px;
 	padding: 13px 18px;
 	font-size: 18px;
 	font-weight: bold;
@@ -530,9 +522,8 @@ a {
 }
 .table-form p {
 	position: absolute;
-	right: 30px;
-	bottom: 65px;
-	margin-top: 15px;
+	right: 26px;
+	bottom: 54px;
 	margin-bottom: 13px;
 	font-weight: 700;
 	font-size: 15px;
@@ -807,12 +798,12 @@ input:focus:-ms-input-placeholder {
 	justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	width: 254px;
+	width: 260px;
 	padding: 0;
-	margin: -24px 12px 8px;
+	margin: -24px 1px 8px;
 }
 .breadcrumbs li {
-	padding: 0 17px 0 0;
+	padding: 0 27px 0 0;
 	list-style: none;
 	font-weight: normal;
 	font-size: 14px;
@@ -845,7 +836,7 @@ input:focus:-ms-input-placeholder {
 	list-style: none;
 }
 .catalog-list {
-	margin-bottom: 57px;
+	margin-bottom: 48px;
 }
 .popular-item,
 .list-item {
@@ -881,7 +872,7 @@ input:focus:-ms-input-placeholder {
 .popular-item h3 {
 	z-index: 4;
 	margin-top: -3px;
-	padding: 0px;
+	padding: 0;
 	-webkit-box-ordinal-group: 3;
 	-ms-flex-order: 2;
 	order: 2;
@@ -891,10 +882,10 @@ input:focus:-ms-input-placeholder {
 	text-align: center;
 }
 .list-item .lingonberry-description {
-	padding: 0px 6px;
+	padding: 0 6px;
 }
 .list-item h3 {
-	margin-top: -9px;
+	margin-top: -6px;
 }
 .popular-item p,
 .list-item p {
@@ -933,7 +924,6 @@ input:focus:-ms-input-placeholder {
 	box-shadow: 0 20px 20px 0 var(--item-box-shadow);
 	cursor: pointer;
 }
-
 .button-list {
 	z-index: 5;
 	position: absolute;
@@ -1057,12 +1047,10 @@ input:focus:-ms-input-placeholder {
 	vertical-align: top;
 	border: 0;
 }
-
 .news-link:hover,
 .news-link:active {
 	color: var(--link-color);
 }
-
 .subscription {
 	width: 549px;
 	padding: 3px 5px 5px 6px;
@@ -1227,7 +1215,7 @@ input:focus:-ms-input-placeholder {
 	-ms-flex: wrap;
 	flex-wrap: wrap;
 	margin: 0;
-	padding: 10px 1px 0px 16px;
+	padding: 10px 1px 0 16px;
 	font-weight: 400;
 	list-style: none;
 	background-color: var(--bg-color-hover-);
@@ -1291,7 +1279,7 @@ input:focus:-ms-input-placeholder {
 	flex-wrap: wrap;
 	margin: 0;
 	margin-top: 2px;
-	padding: 8px 1px 0px 25px;
+	padding: 8px 1px 0 25px;
 	list-style: none;
 	background-color: var(--bg-color-hover-);
 	border-radius: 20px;
@@ -1342,7 +1330,6 @@ input[type=checkbox]:checked + label:hover:after {
 input[type=checkbox]:checked + label:disabled:after {
 	background: url("../img/checkbox-disabled.svg") no-repeat;
 }
-
 .button-filter {
 	margin: 25px 0 5px 10px;
 	padding: 5px 26px 5px 28px;
@@ -1373,8 +1360,8 @@ input[type=checkbox]:checked + label:disabled:after {
 .address {
 	z-index: 1;
 	position: absolute;
-	top: 59px;
-	right: 232px;
+	top: 62px;
+	right: 142px;
 	width: 263px;
 	padding: 32px 19px 38px;
 	color: var(--basic-text-color-hover);
@@ -1417,7 +1404,7 @@ input[type=checkbox]:checked + label:disabled:after {
 	justify-content: space-between;
 	margin: 0 auto;
 	padding: 0 27px;
-	padding-top: 18px;
+	padding-top: 23px;
 	margin-bottom: 25px;
 	width: 1146px;
 	font-size: 13px;
@@ -1524,7 +1511,7 @@ input[type=checkbox]:checked + label:disabled:after {
 	flex-wrap: wrap;
 	margin: 0;
 	margin-bottom: 31px;
-	padding-top: 5px;
+	padding-top: 10px;
 	list-style: none;
 }
 .paginator a {
