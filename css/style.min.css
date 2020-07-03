@@ -505,7 +505,7 @@ a {
 	padding-right: 19px;
 	text-align: center;
 }
-.basket-item .basket-price {
+.basket-item-price .basket-price {
 	color: var(--decoration-elements);
 }
 .basket-button-link {
@@ -548,8 +548,7 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-	border: 2px solid var(--input-active);
-	border-color: var(--input-active);
+	border: 0 0 0 2px var(--input-active);
 }
 input::-webkit-input-placeholder {
 	font-weight: normal;
@@ -1304,9 +1303,9 @@ input:focus:-ms-input-placeholder {
 	content: "";
 	left: -9px;
 	top: 0;
-	width: 20px;
+	width: 23px;
 	height: 20px;
-	background-image: url("../img/checkbox-off.svg");
+	background: url("../img/checkbox-off.svg") no-repeat;
 }
 .topping-filter label:hover:after {
 	background-image: url("../img/checkbox-off-hover.svg");
@@ -1319,8 +1318,8 @@ input[type=checkbox]:checked + label:after {
 	content: '';
 	left: -9px;
 	top: 0;
-	width: 30px;
-	height: 22px;
+	width: 23px;
+	height: 20px;
 	background-color: inherit;
 	background: url("../img/checkbox-on.svg") no-repeat;
 }
