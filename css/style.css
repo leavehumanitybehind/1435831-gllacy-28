@@ -440,6 +440,70 @@ a {
 	box-shadow: 0 0 0 1px var(--input-active);
 	border-color: var(--input-active);
 }
+.login-field input::-webkit-input-placeholder,
+.search-form input::-webkit-input-placeholder {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.login-field ::-moz-placeholder,
+.search-form ::-moz-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.login-field input:-moz-placeholder,
+.search-form input::-moz-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.login-field input:-ms-input-placeholder,
+.search-form input:-ms-input-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.login-field input:focus::-webkit-input-placeholder,
+.search-form input:focus::-webkit-input-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.login-field input:focus::-moz-placeholder,
+.search-form input:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.login-field input:focus:-moz-placeholder,
+.search-form input:focus:-moz-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.login-field input:focus:-ms-input-placeholder,
+.search-form input:focus:-ms-input-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
+}
 
 .login-form-button {
 	margin-left: 18px;
@@ -628,63 +692,6 @@ a {
 	bottom: 67px;
 	font-weight: 700;
 	font-size: 15px;
-}
-
-input::-webkit-input-placeholder {
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 20px;
-	font-weight: 400;
-	color: var(--placeholder-color);
-	opacity: 1;
-	transition: opacity .3s ease;
-}
-
-input::-moz-placeholder {
-	font-weight: 400;
-	color: var(--placeholder-color);
-	opacity: 1;
-	transition: opacity .3s ease;
-}
-
-input:-moz-placeholder {
-	font-weight: 400;
-	color: var(--placeholder-color);
-	opacity: 1;
-	transition: opacity .3s ease;
-}
-
-input:-ms-input-placeholder {
-	font-weight: 400;
-	color: var(--placeholder-color);
-	opacity: 1;
-	transition: opacity .3s ease;
-}
-
-input:focus::-webkit-input-placeholder {
-	font-weight: 400;
-	color: var(--basic-text-color-hover);
-	opacity: 0;
-	transition: opacity .3s ease;
-}
-
-input:focus::-moz-placeholder {
-	opacity: 0;
-	transition: opacity .3s ease;
-}
-
-input:focus:-moz-placeholder {
-	font-weight: 400;
-	color: var(--basic-text-color-hover);
-	opacity: 0;
-	transition: opacity .3s ease;
-}
-
-input:focus:-ms-input-placeholder {
-	font-weight: 400;
-	color: var(--basic-text-color-hover);
-	opacity: 0;
-	transition: opacity .3s ease;
 }
 
 .contacts {
@@ -1238,6 +1245,62 @@ input:focus:-ms-input-placeholder {
 	box-shadow: 0 0 0 1px var(--input-active);
 	border-color: var(--input-active);
 }
+.subscription-container input::-webkit-input-placeholder {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.subscription-container input ::-moz-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.subscription-container input:-moz-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.subscription-container input:-ms-input-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.subscription-container input:focus::-webkit-input-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.subscription-container input:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.subscription-container input:focus:-moz-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.subscription-container input:focus:-ms-input-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
+}
 
 .subscription button {
 	position: absolute;
@@ -1548,11 +1611,11 @@ input[type=checkbox]:disabled + label:after {
 .map {
 	position: relative;
 	height: 430px;
-	width: 100%;
+	min-width: 1200px;
 	margin: 0 auto;
+	padding: 0;
 	font-size: 0;
 	background: url("../img/map.png") no-repeat 50% 0;
-	background-size: 100%;
 	background-color: var(--basic-color-bg);
 }
 
@@ -1807,6 +1870,62 @@ input[type=checkbox]:disabled + label:after {
 	border: 1px solid var(--input-hover);
 	border-radius: 4px;
 	background-color: var(--basic-text-color);
+}
+.popup-form input::-webkit-input-placeholder {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.popup-form input ::-moz-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.popup-form input:-moz-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.popup-form input:-ms-input-placeholder {
+	font-weight: 400;
+	color: var(--placeholder-color);
+	opacity: 1;
+	transition: opacity .3s ease;
+}
+
+.popup-form input:focus::-webkit-input-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.popup-form input:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.popup-form input:focus:-moz-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
+}
+
+.popup-form input:focus:-ms-input-placeholder {
+	font-weight: 400;
+	color: var(--basic-text-color-hover);
+	opacity: 0;
+	transition: opacity .3s ease;
 }
 
 .popup-textarea {
