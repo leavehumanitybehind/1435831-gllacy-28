@@ -553,15 +553,16 @@ a {
 	font-weight: normal;
 	font-size: 13px;
 	line-height: 16px;
-	border-bottom: 1px solid var(--line);
 	cursor: pointer;
 }
 
 .basket-table td {
+	position: relative;
 	min-height: 40px;
 	padding-top: 18px;
 	vertical-align: top;
 }
+
 
 .basket-item-image {
 	padding-left: 12px;
@@ -1551,7 +1552,7 @@ input[type=checkbox]:disabled + label:after {
 	z-index: 1;
 	position: absolute;
 	top: 62px;
-	right: 102px;
+	right: 92px;
 	width: 263px;
 	padding: 31px 15px 38px;
 	color: var(--basic-text-color-hover);
