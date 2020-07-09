@@ -43,7 +43,7 @@ var form = popup.querySelector(".popup-form");
 var storage = localStorage.getItem("name");
 
 var isStorageSupport = true;
-var storage = "";
+var storage = '';
 
 link.addEventListener("click", function(evt) {
 	evt.preventDefault();
